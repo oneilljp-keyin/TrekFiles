@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "trekfiles:block/large_blue_conduit_down",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "trekfiles:block/large_blue_conduit_down"
+    },
+    "axis=z": {
+      "model": "trekfiles:block/large_blue_conduit_down",
+      "x": 90
+    }
+  }
+}

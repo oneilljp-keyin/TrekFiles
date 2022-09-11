@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "trekfiles:block/conduit_top",
+    "side": "trekfiles:block/yellow_conduit_side_up"
+  }
+}

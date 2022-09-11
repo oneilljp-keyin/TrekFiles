@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+[[mods]]
+modId="trekfiles"
+version="${file.jarVersion}"
+displayName="Trek Files Mod"
+logoFile=""
+credits="A Tutorial Mod by Cy4"
+authors="Cy4 and John O'Neill"
+
+description='''
+This is the Description. It can be many lines
+
+Go here for tutorial https://www.youtube.com/watch?v=xRXWa5HRAxU
+'''
+[[dependencies.trekfiles]]
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[43,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.trekfiles]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,54 @@
+{
+  "multipart": [
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up" } },
+
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_n", "uvlock": true },
+      "when":  { "east":  "false", "north": "true", "south": "false", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_n", "uvlock": true, "y": 90 },
+      "when":  { "east":  "true", "north": "false", "south": "false", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_n", "uvlock": true, "y": 180 },
+      "when":  { "east":  "false", "north": "false", "south": "true", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_n", "uvlock": true, "y": 270 },
+      "when":  { "east":  "false", "north": "false", "south": "false", "west":  "true" }
+    },
+
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_ne", "uvlock": true },
+      "when":  { "east":  "true", "north": "true", "south": "false", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_ne", "uvlock": true, "y": 90 },
+      "when":  { "east":  "true", "north": "false", "south": "true", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_ne", "uvlock": true, "y": 180 },
+      "when":  { "east":  "false", "north": "false", "south": "true", "west":  "true" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_ne", "uvlock": true, "y": 270 },
+      "when":  { "east":  "false", "north": "true", "south": "false", "west":  "true" }
+    },
+
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_ns", "uvlock": true },
+      "when":  { "east":  "false", "north": "true", "south": "true", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_ns", "uvlock": true, "y": 90 },
+      "when":  { "east":  "true", "north": "false", "south": "false", "west":  "true" }
+    },
+
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_nse", "uvlock": true },
+      "when":  { "east":  "true", "north": "true", "south": "true", "west":  "false" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_nse", "uvlock": true, "y": 90 },
+      "when":  { "east":  "true", "north": "false", "south": "true", "west":  "true" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_nse", "uvlock": true, "y": 180 },
+      "when":  { "east":  "false", "north": "true", "south": "true", "west":  "true" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_nse", "uvlock": true, "y": 270 },
+      "when":  { "east":  "true", "north": "true", "south": "false", "west":  "true" }
+    },
+    { "apply": { "model": "trekfiles:block/medium_yellow_conduit_up_nsew", "uvlock": true },
+      "when":  { "east":  "true", "north": "true", "south": "true", "west":  "true" }
+    }
+  ]
+}

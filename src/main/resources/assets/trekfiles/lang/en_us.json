@@ -1,0 +1,14 @@
+{
+	"item.trekfiles.example_item": "Example Item",
+	"itemGroup.trekfiles": "Trekfiles Mod Tab",
+	"block.trekfiles.example_block": "Example Block",
+	"block.trekfiles.rotatable_block": "Rotatable Block",
+	"block.trekfiles.large_yellow_conduit_up": "Large Yellow Conduit (Up)",
+	"block.trekfiles.large_yellow_conduit_down": "Large Yellow Conduit (Down)",
+	"block.trekfiles.large_blue_conduit_up": "Large Blue Conduit (Up)",
+	"block.trekfiles.large_blue_conduit_down": "Large Blue Conduit (Down)",
+	"block.trekfiles.large_red_conduit_up": "Large Red Conduit (Up)",
+	"block.trekfiles.large_red_conduit_down": "Large Red Conduit (Down)",
+	"block.trekfiles.medium_yellow_conduit_up": "Medium Yellow Conduit (Up)",
+	"block.trekfiles.medium_yellow_conduit_down": "Medium Yellow Conduit (Down)"
+}
