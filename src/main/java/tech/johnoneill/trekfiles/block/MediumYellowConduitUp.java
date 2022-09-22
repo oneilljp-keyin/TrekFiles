@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.PipeBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -17,7 +18,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public class MediumYellowConduitUp extends Block {
+public class MediumYellowConduitUp extends FenceBlock {
 	public static final BooleanProperty NORTH = PipeBlock.NORTH;
 	public static final BooleanProperty EAST = PipeBlock.EAST;
 	public static final BooleanProperty SOUTH = PipeBlock.SOUTH;
@@ -61,12 +62,12 @@ public class MediumYellowConduitUp extends Block {
 				;
 	}
 
-	private boolean connectsTo(BlockState state, boolean bool, Direction direction) {
-		boolean flag = true;
-		boolean flag1 = true;
-		isExceptionForConnection(state);
-		return flag || flag1;
-	}
+//	private boolean connectsTo(BlockState state, boolean bool, Direction direction) {
+//		boolean flag = true;
+//		boolean flag1 = true;
+//		isExceptionForConnection(state);
+//		return flag || flag1;
+//	}
 
 	public static VoxelShape makeShape() {
 		VoxelShape shape = Shapes.empty();
