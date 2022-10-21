@@ -1,0 +1,24 @@
+{
+  "parent": "trekfiles:block/tng_block",
+  "ambientocclusion": false,
+  "__comment": "Model_generated_using_MrCrayfish's_Model_Creator_(http://mrcrayfish.com/modelcreator/)",
+  "textures": {
+    "particle": "#post",
+    "0": "#post"
+  },
+  "elements": [
+    {
+      "name": "Element",
+      "from": [7.25, 0.0, 7.25],
+      "to": [8.75, 16.0, 8.75],
+      "faces": {
+        "north": {"uv": [6.5, 0.0, 9.5, 16.0], "texture": "#0"},
+        "east":  {"uv": [6.5, 0.0, 9.5, 16.0], "texture": "#0"},
+        "south": {"uv": [6.5, 0.0, 9.5, 16.0], "texture": "#0"},
+        "west":  {"uv": [6.5, 0.0, 9.5, 16.0], "texture": "#0"},
+        "up":    {"uv": [11.0, 2.0, 12.0, 3.0], "texture": "#0"},
+        "down":  {"uv": [11.0, 2.0, 12.0, 3.0], "texture": "#0"}
+      }
+    }
+  ]
+}

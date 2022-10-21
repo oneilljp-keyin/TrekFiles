@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "bottom": "trekfiles:block/door_galaxy_ten_forward_lower",
+    "top": "trekfiles:block/door_galaxy_ten_forward_upper"
+  }
+}

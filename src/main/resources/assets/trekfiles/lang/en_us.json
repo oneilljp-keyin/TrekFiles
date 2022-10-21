@@ -1,14 +1,57 @@
 {
 	"item.trekfiles.example_item": "Example Item",
+	"item.trekfiles.padd": "PADD",
+
 	"itemGroup.trekfiles": "Trekfiles Mod Tab",
-	"block.trekfiles.example_block": "Example Block",
-	"block.trekfiles.rotatable_block": "Rotatable Block",
-	"block.trekfiles.large_yellow_conduit_up": "Large Yellow Conduit (Up)",
-	"block.trekfiles.large_yellow_conduit_down": "Large Yellow Conduit (Down)",
-	"block.trekfiles.large_blue_conduit_up": "Large Blue Conduit (Up)",
-	"block.trekfiles.large_blue_conduit_down": "Large Blue Conduit (Down)",
-	"block.trekfiles.large_red_conduit_up": "Large Red Conduit (Up)",
-	"block.trekfiles.large_red_conduit_down": "Large Red Conduit (Down)",
-	"block.trekfiles.medium_yellow_conduit_up": "Medium Yellow Conduit (Up)",
-	"block.trekfiles.medium_yellow_conduit_down": "Medium Yellow Conduit (Down)"
+
+	"block.trekfiles.holodeck_block": "Holodeck Block",
+	"block.trekfiles.lcars_block_one": "LCARS Block",
+	"block.trekfiles.lcars_block_two": "LCARS Block",
+	"block.trekfiles.lcars_block_three": "LCARS Block",
+	"block.trekfiles.lcars_block_four": "LCARS Block",
+	"block.trekfiles.lcars_block_five": "LCARS Block",
+	"block.trekfiles.lcars_block_six": "LCARS Block",
+	"block.trekfiles.lcars_block_seven": "LCARS Block",
+
+	"block.trekfiles.hatch": "Hatch",
+	"block.trekfiles.hatch_airlock": "Airlock Hatch",
+	"block.trekfiles.hatch_grate": "Floor Grate Hatch",
+	"block.trekfiles.hatch_trim": "Trim Hatch",
+
+	"block.trekfiles.door_defiant_single": "Door Single (Defiant)",
+	"block.trekfiles.door_defiant_double": "Door Double (Defiant)",
+
+	"block.trekfiles.captians_chair_tos": "Captian's Chair (TOS)",
+
+	"block.trekfiles.door_sensor": "Door Sensor (Invisible)",
+
+	"block.trekfiles.safety_rail_red": "Red Safety Rail",
+	"block.trekfiles.safety_rail_white": "White Safety Rail",
+
+	"block.trekfiles.transporter_pad": "Transporter Pad",
+	"block.trekfiles.transporter_wall_2360s": "Transporter Wall (2360s)",
+
+	"block.trekfiles.wall_panel_full_upper": "Wall Panel Full Upper (Defiant)",
+	"block.trekfiles.wall_panel_full_lower": "Wall Panel Full Lower (Defiant)",
+	"block.trekfiles.wall_panel_upper": "Wall Panel Upper (Defiant)",
+	"block.trekfiles.wall_panel_lower": "Wall Panel Lower (Defiant)",
+
+	"block.trekfiles.conduit_large_up_blue": "Large Blue Conduit (Up)",
+	"block.trekfiles.conduit_large_up_red": "Large Red Conduit (Up)",
+	"block.trekfiles.conduit_large_up_yellow": "Large Yellow Conduit (Up)",
+	"block.trekfiles.conduit_large_down_blue": "Large Blue Conduit (Down)",
+	"block.trekfiles.conduit_large_down_red": "Large Red Conduit (Down)",
+	"block.trekfiles.conduit_large_down_yellow": "Large Yellow Conduit (Down)",
+	"block.trekfiles.conduit_medium_up_blue": "Medium Blue Conduit (Up)",
+	"block.trekfiles.conduit_medium_up_yellow": "Medium Yellow Conduit (Up)",
+	"block.trekfiles.conduit_medium_up_red": "Medium Red Conduit (Up)",
+	"block.trekfiles.conduit_medium_down_blue": "Medium Blue Conduit (Down)",
+	"block.trekfiles.conduit_medium_down_red": "Medium Red Conduit (Down)",
+	"block.trekfiles.conduit_medium_down_yellow": "Medium Yellow Conduit (Down)",
+	"block.trekfiles.conduit_small_up_blue": "Small Blue Conduit (Up)",
+	"block.trekfiles.conduit_small_up_red": "Small Red Conduit (Up)",
+	"block.trekfiles.conduit_small_up_yellow": "Small Yellow Conduit (Up)",
+	"block.trekfiles.conduit_small_down_blue": "Small Blue Conduit (Down)",
+	"block.trekfiles.conduit_small_down_red": "Small Red Conduit (Down)",
+	"block.trekfiles.conduit_small_down_yellow": "Small Yellow Conduit (Down)"
 }

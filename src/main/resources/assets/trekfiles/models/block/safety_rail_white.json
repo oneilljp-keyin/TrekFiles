@@ -1,0 +1,70 @@
+{
+  "parent": "trekfiles:block/tng_block",
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "textures": {
+    "red_concrete": "minecraft:block/white_concrete",
+    "black_concrete": "minecraft:block/black_concrete"
+  },
+  "elements": [
+    {
+      "name": "Element",
+      "from": [ 7.25, 15, 8.75 ],
+      "to": [ 8.75, 16, 16 ],
+      "faces": {
+        "east": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 7.25, 15, 0 ],
+      "to": [ 8.75, 16, 8.8 ],
+      "faces": {
+        "north": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 7.25, 0, 7.25 ],
+      "to": [ 8.75, 15, 8.75 ],
+      "faces": {
+        "north": { "texture": "#black_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#black_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#black_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#black_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "down": { "texture": "#black_concrete", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 0, 15, 7.25 ],
+      "to": [ 7.25, 16, 8.75 ],
+      "faces": {
+        "north": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 8.75, 15, 7.25 ],
+      "to": [ 16, 16, 8.75 ],
+      "faces": {
+        "north": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#red_concrete", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#red_concrete", "uv": [ 11, 2, 12, 3 ] }
+      }
+    }
+  ]
+}

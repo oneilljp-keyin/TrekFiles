@@ -1,0 +1,89 @@
+{
+  "parent": "trekfiles:block/tng_block",
+  "__comment": "Model_generated_using_MrCrayfish\u0027s_Model_Creator_(http://mrcrayfish.com/modelcreator/)",
+  "textures": {
+    "particle": "#post",
+    "0": "#rail",
+    "1": "#post"
+  },
+  "elements": [
+    {
+      "name": "Element",
+      "from": [ 7.25, 15, 0 ],
+      "to": [ 8.75, 16, 3.5 ],
+      "faces": {
+        "north": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 12.5, 15, 7.25 ],
+      "to": [ 16, 16, 8.75 ],
+      "faces": {
+        "north": { "texture": "#rail", "uv": [ 6.5, 0, 10.5, 16 ] },
+        "east": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 11, 15, 6.25 ],
+      "to": [ 13, 16, 7.75 ],
+      "faces": {
+        "north": { "texture": "#rail", "uv": [ 6.5, 0, 10.5, 16 ] },
+        "east": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 8.25, 15, 3 ],
+      "to": [ 9.75, 16, 5 ],
+      "faces": {
+        "north": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 10, 15, 5.5 ],
+      "to": [ 11.5, 16, 7 ],
+      "faces": {
+        "north": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 9, 15, 4.5 ],
+      "to": [ 10.5, 16, 6 ],
+      "faces": {
+        "north": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "east": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "south": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "west": { "texture": "#rail", "uv": [ 6.5, 0, 9.5, 16 ] },
+        "up": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] },
+        "down": { "texture": "#rail", "uv": [ 11, 2, 12, 3 ] }
+      }
+    }
+  ]
+}

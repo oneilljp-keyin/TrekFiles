@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/captains_chair_tos"},
+        "facing=south": { "model":  "trekfiles:block/captains_chair_tos", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/captains_chair_tos", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/captains_chair_tos", "y": 270}
+    }
+}

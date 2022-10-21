@@ -1,0 +1,7 @@
+{
+  "parent": "trekfiles:block/safety_rail/nsew",
+  "textures": {
+    "rail": "minecraft:block/red_concrete",
+    "post": "minecraft:block/black_concrete"
+  }
+}

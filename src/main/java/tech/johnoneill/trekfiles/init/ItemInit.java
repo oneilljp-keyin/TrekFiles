@@ -15,10 +15,8 @@ import tech.johnoneill.trekfiles.item.ExampleItem;
 public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TrekFiles.MOD_ID);
 
-	public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
-			() -> new ExampleItem(new Item.Properties().tab(TrekFiles.TREKFILES_TAB)
-					.food(new FoodProperties.Builder().nutrition(4).saturationMod(2.0f)
-							.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1f).build())));
+	public static final RegistryObject<Item> PADD = register("padd",
+			() -> new Item(new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);

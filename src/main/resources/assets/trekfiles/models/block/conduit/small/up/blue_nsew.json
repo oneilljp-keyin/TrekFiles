@@ -1,0 +1,7 @@
+{
+    "parent": "trekfiles:block/conduit/small/nsew",
+    "textures": {
+    	"top": "trekfiles:block/conduit_top",
+    	"side": "trekfiles:block/blue_conduit_side_up"
+    }
+}

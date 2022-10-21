@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "trekfiles:conduit_medium_up_blue",
+    "trekfiles:conduit_medium_down_blue",
+    "trekfiles:conduit_medium_up_red",
+    "trekfiles:conduit_medium_down_red",
+    "trekfiles:conduit_medium_up_yellow",
+    "trekfiles:conduit_medium_down_yellow",
+    "trekfiles:conduit_small_up_blue",
+    "trekfiles:conduit_small_down_blue",
+    "trekfiles:conduit_small_up_red",
+    "trekfiles:conduit_small_down_red",
+    "trekfiles:conduit_small_up_yellow",
+    "trekfiles:conduit_small_down_yellow",
+    "trekfiles:table",
+    "trekfiles:safety_rail_red",
+    "trekfiles:safety_rail_white"
+  ]
+}

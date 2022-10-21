@@ -1,0 +1,50 @@
+{
+	"parent": "trekfiles:block/tng_block",
+    "ambientocclusion": false,
+	"textures": {
+		"particle": "#side",
+		"top": "#top",
+		"side": "#side"
+	},
+	"elements": [
+		{
+			"name": "Cube",
+			"from": [3, 0, 3],
+			"to": [13, 16, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#top"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#top"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [4, 0, 2],
+			"to": [12, 16, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [4, 2, 12, 14], "texture": "#top"},
+				"down": {"uv": [4, 2, 12, 14], "texture": "#top"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [2, 0, 4],
+			"to": [14, 16, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [2, 4, 14, 12], "texture": "#top"},
+				"down": {"uv": [2, 4, 14, 12], "texture": "#top"}
+			}
+		}
+	]
+}
