@@ -24,6 +24,10 @@ public class BlockInit {
 	public static final RegistryObject<Block> HOLODECK_BLOCK = register("holodeck_block",
 			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<RotatedPillarBlock> SHUTTLE_NACELLE = register("shuttle_nacelle",
+			() -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
 	public static final RegistryObject<Block> LCARS_BLOCK_ONE = register("lcars_block_one",
 			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
@@ -43,6 +47,30 @@ public class BlockInit {
 			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<Block> LCARS_BLOCK_SEVEN = register("lcars_block_seven",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_EIGHT = register("lcars_block_eight",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_NINE = register("lcars_block_nine",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_TEN = register("lcars_block_ten",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_ELEVEN = register("lcars_block_eleven",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_TWELVE = register("lcars_block_twelve",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_INTREPID = register("lcars_block_intrepid",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_CORE = register("lcars_block_core",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> LCARS_BLOCK_MEDICAL = register("lcars_block_medical",
 			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
@@ -65,6 +93,12 @@ public class BlockInit {
 	public static final RegistryObject<DoorBlock> DOOR_DEFIANT_DOUBLE = register("door_defiant_double",
 			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<DoorBlock> DOOR_GALAXY_SINGLE_BROWN = register("door_galaxy_single_brown",
+			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<DoorBlock> DOOR_GALAXY_DOUBLE_BROWN = register("door_galaxy_double_brown",
+			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<DoorBlock> DOOR_GALAXY_TEN_FORWARD = register("door_galaxy_ten_forward",
 			() -> new DoorBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
@@ -75,6 +109,12 @@ public class BlockInit {
 
 	public static final RegistryObject<TrapDoorBlock> HATCH = register("hatch",
 			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<HatchSplitHorizontal> HATCH_DOOR = register("hatch_door",
+			() -> new HatchSplitHorizontal(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<HatchSplitVertical> HATCH_DOOR_VERTICAL = register("hatch_door_vertical",
+			() -> new HatchSplitVertical(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<TrapDoorBlock> HATCH_AIRLOCK = register("hatch_airlock",
 			() -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
@@ -92,6 +132,9 @@ public class BlockInit {
 	public static final RegistryObject<FenceBlock> TABLE = register("table",
 			() -> new ConduitMedium(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<MessHallTable> MESS_HALL_TABLE = register("mess_hall_table",
+			() -> new MessHallTable(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	public static final RegistryObject<FenceBlock> SAFETY_FENCE_RED = register("safety_rail_red",
 			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
@@ -100,8 +143,92 @@ public class BlockInit {
 			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
-	public static final RegistryObject<RotatableChair> CAPTAINS_CHAIR_TOS = register("captains_chair_tos",
-			() -> new RotatableChair(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+	public static final RegistryObject<FenceBlock> PARTITION_BLUE = register("partition_blue",
+			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<FenceBlock> PARTITION_BLACK = register("partition_black",
+			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<FenceBlock> PARTITION_WHITE = register("partition_white",
+			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<FenceBlock> PARTITION_BEIGE = register("partition_beige",
+			() -> new FenceBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<ChairConstitutionCaptain> CAPTAINS_CHAIR_TOS = register("captains_chair_tos",
+			() -> new ChairConstitutionCaptain(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<ChairDefiantCaptain> CAPTAINS_CHAIR_DS9 = register("captains_chair_defiant",
+			() -> new ChairDefiantCaptain(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<ChairDefiantConsole> CHAIR_DEFIANT_CONSOLE = register("chair_defiant_console",
+			() -> new ChairDefiantConsole(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<ChairDefiantConsole> CHAIR_DEFIANT_MESS = register("chair_defiant_mess",
+			() -> new ChairDefiantConsole(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<ChairStool> CHAIR_STOOL = register("chair_stool",
+			() -> new ChairStool(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<ShuttleType18> SHUTTLE_TYPE_18 = register("shuttlecraft_type_18",
+			() -> new ShuttleType18(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<LadderBlock> ACCESS_LADDER = register("access_ladder",
+			() -> new LadderBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).noOcclusion()),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<Arch> ARCH_DEFIANT = register("arch_defiant",
+			() -> new Arch(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).noOcclusion()
+					.lightLevel((p_50872_) -> { return 15; })),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<ArchHeader> ARCH_HEADER_DEFIANT = register("arch_header_defiant",
+			() -> new ArchHeader(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).noOcclusion()),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<ArchWithHeader> ARCH_WITH_HEADER_DEFIANT = register("arch_with_header_defiant",
+			() -> new ArchWithHeader(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL).noOcclusion()
+					.lightLevel((p_50872_) -> { return 15; })),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<CarvedPumpkinBlock> REPLICATOR_ONE = register("replicator_one",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> REPLICATOR_TWO = register("replicator_two",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> REPLICATOR_THREE = register("replicator_three",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<FoodTrayHolder> REPLICATOR_TRAY_HOLDER = register("replicator_tray_holder",
+			() -> new FoodTrayHolder(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_SIDE = register("floor_defiant_path_side",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_INTERSECT = register("floor_defiant_path_intersect",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_CORNER = register("floor_defiant_path_corner",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_NO_PATH = register("floor_defiant_no_path",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<SlabBlock> FLOOR_DEFIANT_PATH_SIDE_SLAB = register("floor_defiant_path_side_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<SlabBlock> FLOOR_DEFIANT_PATH_INTERSECT_SLAB = register("floor_defiant_path_intersect_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<SlabBlock> FLOOR_DEFIANT_PATH_CORNER_SLAB = register("floor_defiant_path_corner_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<SlabBlock> FLOOR_DEFIANT_NO_PATH_SLAB = register("floor_defiant_no_path_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	public static final RegistryObject<RotatedPillarBlock> CONDUIT_LARGE_UP_BLUE = register("conduit_large_up_blue",

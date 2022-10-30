@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "trekfiles:block/lcars_block_core"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "trekfiles:block/floor/defiant/path_intersect_slab"
+        },
+        "type=double": {
+            "model": "trekfiles:block/floor/defiant/path_intersect"
+        },
+        "type=top": {
+            "model": "trekfiles:block/floor/defiant/path_intersect_slab_top"
+        }
+    }
+}

@@ -1,8 +1,8 @@
 {
   "__comment": "Designed by KoolCatTV with Cubik Studio - https://cubik.studio",
   "textures": {
-    "particle": "block/blank",
-    "texture": "block/blank"
+    "particle": "trekfiles:block/blank",
+    "texture": "trekfiles:block/blank"
   },
   "elements": [
     {

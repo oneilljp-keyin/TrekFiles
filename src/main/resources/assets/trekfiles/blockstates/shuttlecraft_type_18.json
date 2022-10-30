@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/shuttlecraft_type_18"},
+        "facing=south": { "model":  "trekfiles:block/shuttlecraft_type_18", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/shuttlecraft_type_18", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/shuttlecraft_type_18", "y": 270}
+    }
+}

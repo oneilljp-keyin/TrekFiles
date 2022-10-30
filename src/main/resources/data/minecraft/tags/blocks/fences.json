@@ -15,6 +15,10 @@
     "trekfiles:conduit_small_down_yellow",
     "trekfiles:table",
     "trekfiles:safety_rail_red",
-    "trekfiles:safety_rail_white"
+    "trekfiles:safety_rail_white",
+    "trekfiles:partition_beige",
+    "trekfiles:partition_black",
+    "trekfiles:partition_blue",
+    "trekfiles:partition_white"
   ]
 }

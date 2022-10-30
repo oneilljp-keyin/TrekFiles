@@ -20,39 +20,30 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class RotatableChair extends HorizontalDirectionalBlock {
+public class ChairDefiantCaptain extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
     private static final Optional<VoxelShape> SHAPE = Stream.of(
-            Block.box(13, 8, 2, 14, 11, 13),
-            Block.box(2, 11, 2, 3, 11.3, 13),
-            Block.box(13, 11, 2, 14, 11.3, 13),
-            Block.box(14, 7, 1, 17, 9, 2),
-            Block.box(-1, 7, 1, 2, 9, 2),
-            Block.box(14.5, 11, 9, 15.5, 11.1, 12),
-            Block.box(0.5, 11, 9, 1.5, 11.1, 12),
-            Block.box(14.5, 11, 4, 15.5, 11.1, 5),
-            Block.box(14.5, 11, 5, 15.5, 11.1, 6),
-            Block.box(14.5, 11, 6, 15.5, 11.1, 7),
-            Block.box(0.7, 11, 11, 1.3, 11.2, 11.5),
-            Block.box(0.7, 11, 10, 1.3, 11.2, 10.5),
-            Block.box(14.7, 11, 9.5, 15.3, 11.2, 10),
-            Block.box(14.7, 11, 10.5, 15.3, 11.2, 11.5),
-            Block.box(0.5, 11, 4, 1.5, 11.1, 6),
-            Block.box(2.5, 13, 2, 13.5, 16, 2.4),
-            Block.box(2, 0, 5, 14, 2, 15),
-            Block.box(5, 0, 4, 11, 5, 10),
-            Block.box(-1, 5, 1, 17, 7, 13),
-            Block.box(-1, 7, 2, 2, 10, 3),
-            Block.box(14, 7, 2, 17, 10, 3),
-            Block.box(-1, 7, 3, 2, 11, 13),
-            Block.box(14, 7, 3, 17, 11, 13),
-            Block.box(2.5, 7, 1, 13.5, 16, 2),
-            Block.box(2, 7, 2, 14, 8, 13),
-            Block.box(2, 8, 2, 3, 11, 13)
+            Block.box(2, 8.1, 1.6, 14, 15.1, 4.1),
+            Block.box(3, 15.1, 1.6, 13, 17.6, 4.1),
+            Block.box(4, 17.6, 1.6, 12, 20.1, 4.1),
+            Block.box(2, 6.6, 1.6, 14, 8.6, 12.6),
+            Block.box(14.5, 10.1, 4, 16.5, 12.1, 11.1),
+            Block.box(-0.5, 10.1, 4, 1.5, 12.1, 11.1),
+            Block.box(3, 6.6, 12.6, 13, 8.6, 13.6),
+            Block.box(5, 20.1, 1.6, 11, 22.6, 3.6),
+            Block.box(1.9, 6.8, 1.5, 14.1, 10, 4.9),
+            Block.box(1, 13.4, 0.5, 3, 13.9, 0.75),
+            Block.box(0.5, 12.1, 0.6, 15.5, 14.1, 4),
+            Block.box(-0.5, 8.1, -0.4, 16.5, 12.1, 4),
+            Block.box(-0.5, 7.1, 0.6, 16.5, 8.1, 12.1),
+            Block.box(5, 4, 4, 11, 6.5, 10),
+            Block.box(5.25, 3, 4.25, 10.75, 4, 9.75),
+            Block.box(5, 1, 4, 11, 3, 10),
+            Block.box(4, 0, 3, 12, 1, 11)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
 
-    public RotatableChair(Properties properties) {
+    public ChairDefiantCaptain(Properties properties) {
         super(properties);
         this.registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH));
         runCalculation(SHAPE.orElse(Shapes.block()));

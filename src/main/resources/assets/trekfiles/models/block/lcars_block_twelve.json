@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "trekfiles:block/lcars_12",
+		"up": "trekfiles:block/lcars_top",
+		"down": "trekfiles:block/lcars_top",
+		"north": "trekfiles:block/lcars_12",
+		"south": "trekfiles:block/lcars_12",
+		"east": "trekfiles:block/lcars_12",
+		"west": "trekfiles:block/lcars_12"
+	}
+}

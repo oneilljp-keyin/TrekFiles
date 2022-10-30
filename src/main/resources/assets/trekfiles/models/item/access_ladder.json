@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "layer0": "trekfiles:block/access_ladder"
+  }
+}

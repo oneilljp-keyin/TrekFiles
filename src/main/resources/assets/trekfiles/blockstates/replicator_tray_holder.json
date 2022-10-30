@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,half=bottom": {
+      "model": "trekfiles:block/replicator_tray_holder_bottom",
+      "y": 90
+    },
+    "facing=east,half=top": {
+      "model": "trekfiles:block/replicator_tray_holder_top",
+      "y": 90
+    },
+    "facing=north,half=bottom": {
+      "model": "trekfiles:block/replicator_tray_holder_bottom"
+    },
+    "facing=north,half=top": {
+      "model": "trekfiles:block/replicator_tray_holder_top"
+    },
+    "facing=south,half=bottom": {
+      "model": "trekfiles:block/replicator_tray_holder_bottom",
+      "y": 180
+    },
+    "facing=south,half=top": {
+      "model": "trekfiles:block/replicator_tray_holder_top",
+      "y": 180
+    },
+    "facing=west,half=bottom": {
+      "model": "trekfiles:block/replicator_tray_holder_bottom",
+      "y": 270
+    },
+    "facing=west,half=top": {
+      "model": "trekfiles:block/replicator_tray_holder_top",
+      "y": 270
+    }
+  }
+}
