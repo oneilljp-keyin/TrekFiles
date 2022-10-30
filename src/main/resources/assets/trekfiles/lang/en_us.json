@@ -1,14 +1,100 @@
 {
 	"item.trekfiles.example_item": "Example Item",
+	"item.trekfiles.padd": "PADD",
+
 	"itemGroup.trekfiles": "Trekfiles Mod Tab",
-	"block.trekfiles.example_block": "Example Block",
-	"block.trekfiles.rotatable_block": "Rotatable Block",
-	"block.trekfiles.large_yellow_conduit_up": "Large Yellow Conduit (Up)",
-	"block.trekfiles.large_yellow_conduit_down": "Large Yellow Conduit (Down)",
-	"block.trekfiles.large_blue_conduit_up": "Large Blue Conduit (Up)",
-	"block.trekfiles.large_blue_conduit_down": "Large Blue Conduit (Down)",
-	"block.trekfiles.large_red_conduit_up": "Large Red Conduit (Up)",
-	"block.trekfiles.large_red_conduit_down": "Large Red Conduit (Down)",
-	"block.trekfiles.medium_yellow_conduit_up": "Medium Yellow Conduit (Up)",
-	"block.trekfiles.medium_yellow_conduit_down": "Medium Yellow Conduit (Down)"
+
+	"block.trekfiles.holodeck_block": "Holodeck Block",
+	"block.trekfiles.shuttle_nacelle": "Shuttle Nacelle",
+
+	"block.trekfiles.lcars_block_one": "LCARS Block",
+	"block.trekfiles.lcars_block_two": "LCARS Block",
+	"block.trekfiles.lcars_block_three": "LCARS Block",
+	"block.trekfiles.lcars_block_four": "LCARS Block",
+	"block.trekfiles.lcars_block_five": "LCARS Block",
+	"block.trekfiles.lcars_block_six": "LCARS Block",
+	"block.trekfiles.lcars_block_seven": "LCARS Block",
+	"block.trekfiles.lcars_block_eight": "LCARS Block",
+	"block.trekfiles.lcars_block_nine": "LCARS Block",
+	"block.trekfiles.lcars_block_ten": "LCARS Block",
+	"block.trekfiles.lcars_block_eleven": "LCARS Block",
+	"block.trekfiles.lcars_block_twelve": "LCARS Block",
+	"block.trekfiles.lcars_block_intrepid": "LCARS Block (Intrepid Class)",
+	"block.trekfiles.lcars_block_core": "LCARS Block (Computer Core)",
+	"block.trekfiles.lcars_block_medical": "LCARS Block (Medical)",
+
+	"block.trekfiles.hatch": "Hatch",
+	"block.trekfiles.hatch_door": "Hatch Horizontal (Split)",
+	"block.trekfiles.hatch_door_vertical": "Hatch Vertical (Split)",
+	"block.trekfiles.hatch_airlock": "Airlock Hatch",
+	"block.trekfiles.hatch_grate": "Floor Grate Hatch",
+	"block.trekfiles.hatch_trim": "Trim Hatch",
+
+	"block.trekfiles.door_defiant_single": "Door (Defiant)",
+	"block.trekfiles.door_defiant_double": "Wide Door (Defiant)",
+	"block.trekfiles.door_galaxy_single_brown": "Door (Galaxy - Brown)",
+	"block.trekfiles.door_galaxy_double_brown": "Wide Door (Galaxy - Brown)",
+	"block.trekfiles.door_galaxy_ten_forward": "Door (Galaxy - Ten Forward)",
+
+	"block.trekfiles.arch_defiant": "Corridor Arch (Defiant)",
+	"block.trekfiles.arch_header_defiant": "Corridor Arch Header (Defiant)",
+
+	"block.trekfiles.captains_chair_tos": "Captian's Chair (Constitution)",
+	"block.trekfiles.captains_chair_defiant": "Captian's Chair (Defiant)",
+	"block.trekfiles.chair_defiant_console": "Console Chair (Defiant)",
+	"block.trekfiles.chair_defiant_mess": "Mess & Quarters Chair (Defiant)",
+	"block.trekfiles.chair_stool": "Stool (Defiant)",
+
+	"block.trekfiles.door_sensor": "Door Sensor (Invisible)",
+
+	"block.trekfiles.safety_rail_red": "Red Safety Rail",
+	"block.trekfiles.safety_rail_white": "White Safety Rail",
+
+	"block.trekfiles.partition_beige": "Biege Partition",
+	"block.trekfiles.partition_black": "Black Partition",
+	"block.trekfiles.partition_blue": "Blue Partition (Force Field)",
+	"block.trekfiles.partition_white": "White Partition",
+
+	"block.trekfiles.access_ladder": "Access Ladder",
+
+	"block.trekfiles.table": "Table",
+	"block.trekfiles.mess_hall_table": "Mess Hall Table (Defiant)",
+
+	"block.trekfiles.transporter_pad": "Transporter Pad",
+	"block.trekfiles.transporter_wall_2360s": "Transporter Wall (2360s)",
+
+	"block.trekfiles.wall_panel_full_upper": "Wall Panel Full Upper (Defiant)",
+	"block.trekfiles.wall_panel_full_lower": "Wall Panel Full Lower (Defiant)",
+	"block.trekfiles.wall_panel_upper": "Wall Panel Upper (Defiant)",
+	"block.trekfiles.wall_panel_lower": "Wall Panel Lower (Defiant)",
+
+	"block.trekfiles.shuttlecraft_type_18": "Shuttlecraft - Type 18",
+
+	"block.trekfiles.replicator_one": "Replicator",
+	"block.trekfiles.replicator_two": "Replicator (Defiant)",
+	"block.trekfiles.replicator_tray_holder": "Replicator Tray Holder",
+
+	"block.trekfiles.floor_defiant_path_side": "Defiant Floor (Path Side)",
+	"block.trekfiles.floor_defiant_path_intersect": "Defiant Floor (Path Intersection)",
+	"block.trekfiles.floor_defiant_path_corner": "Defiant Floor (Path Corner)",
+	"block.trekfiles.floor_defiant_no_path": "Defiant Floor (No Path)",
+
+	"block.trekfiles.conduit_large_up_blue": "Large Blue Conduit (Up)",
+	"block.trekfiles.conduit_large_up_red": "Large Red Conduit (Up)",
+	"block.trekfiles.conduit_large_up_yellow": "Large Yellow Conduit (Up)",
+	"block.trekfiles.conduit_large_down_blue": "Large Blue Conduit (Down)",
+	"block.trekfiles.conduit_large_down_red": "Large Red Conduit (Down)",
+	"block.trekfiles.conduit_large_down_yellow": "Large Yellow Conduit (Down)",
+	"block.trekfiles.conduit_medium_up_blue": "Medium Blue Conduit (Up)",
+	"block.trekfiles.conduit_medium_up_yellow": "Medium Yellow Conduit (Up)",
+	"block.trekfiles.conduit_medium_up_red": "Medium Red Conduit (Up)",
+	"block.trekfiles.conduit_medium_down_blue": "Medium Blue Conduit (Down)",
+	"block.trekfiles.conduit_medium_down_red": "Medium Red Conduit (Down)",
+	"block.trekfiles.conduit_medium_down_yellow": "Medium Yellow Conduit (Down)",
+	"block.trekfiles.conduit_small_up_blue": "Small Blue Conduit (Up)",
+	"block.trekfiles.conduit_small_up_red": "Small Red Conduit (Up)",
+	"block.trekfiles.conduit_small_up_yellow": "Small Yellow Conduit (Up)",
+	"block.trekfiles.conduit_small_down_blue": "Small Blue Conduit (Down)",
+	"block.trekfiles.conduit_small_down_red": "Small Red Conduit (Down)",
+	"block.trekfiles.conduit_small_down_yellow": "Small Yellow Conduit (Down)"
 }

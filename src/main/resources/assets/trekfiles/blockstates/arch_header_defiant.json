@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,hinge=left": {
+      "model": "trekfiles:block/arch/left_header"
+    },
+    "facing=east,hinge=left": {
+      "model": "trekfiles:block/arch/left_header",
+      "y": 90
+    },
+    "facing=south,hinge=left": {
+      "model": "trekfiles:block/arch/left_header",
+      "y": 180
+    },
+    "facing=west,hinge=left": {
+      "model": "trekfiles:block/arch/left_header",
+      "y": 270
+    },
+    "facing=north,hinge=right": {
+      "model": "trekfiles:block/arch/right_header"
+    },
+    "facing=east,hinge=right": {
+      "model": "trekfiles:block/arch/right_header",
+      "y": 90
+    },
+    "facing=south,hinge=right": {
+      "model": "trekfiles:block/arch/right_header",
+      "y": 180
+    },
+    "facing=west,hinge=right": {
+      "model": "trekfiles:block/arch/right_header",
+      "y": 270
+    }
+  }
+}

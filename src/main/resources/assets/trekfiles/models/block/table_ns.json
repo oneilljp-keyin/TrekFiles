@@ -1,0 +1,34 @@
+{
+  "parent": "trekfiles:block/tng_block",
+  "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+  "textures": {
+    "table": "trekfiles:block/table"
+  },
+  "elements": [
+    {
+      "name": "Cube",
+      "from": [ 3, 0, 0 ],
+      "to": [ 13, 14, 16 ],
+      "faces": {
+        "north": { "texture": "#table", "uv": [ 0, 0, 8, 8 ] },
+        "east": { "texture": "#table", "uv": [ 0, 0, 8, 8 ] },
+        "south": { "texture": "#table", "uv": [ 0, 0, 8, 8 ] },
+        "west": { "texture": "#table", "uv": [ 0, 0, 8, 8 ] },
+        "down": { "texture": "#table", "uv": [ 0, 0, 8, 8 ] }
+      }
+    },
+    {
+      "name": "Cube",
+      "from": [ 0, 14, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "north": { "texture": "#table", "uv": [ 0, 9, 8, 11 ] },
+        "east": { "texture": "#table", "uv": [ 0, 9, 8, 11 ] },
+        "south": { "texture": "#table", "uv": [ 0, 8, 8, 10 ] },
+        "west": { "texture": "#table", "uv": [ 0, 8, 8, 10 ] },
+        "up": { "texture": "#table", "uv": [ 8, 0, 16, 8 ] },
+        "down": { "texture": "#table", "uv": [ 0, 8, 8, 16 ] }
+      }
+    }
+  ]
+}

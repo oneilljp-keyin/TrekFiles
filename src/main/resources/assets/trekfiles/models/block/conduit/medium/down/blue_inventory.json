@@ -1,0 +1,7 @@
+{
+    "parent": "trekfiles:block/conduit/medium/post",
+    "textures": {
+    	"top": "trekfiles:block/conduit_top",
+    	"side": "trekfiles:block/blue_conduit_side_down"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/chair_defiant_mess"},
+        "facing=south": { "model":  "trekfiles:block/chair_defiant_mess", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/chair_defiant_mess", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/chair_defiant_mess", "y": 270}
+    }
+}

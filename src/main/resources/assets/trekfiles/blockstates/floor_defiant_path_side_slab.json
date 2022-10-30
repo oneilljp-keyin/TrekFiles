@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "trekfiles:block/floor/defiant/path_side_slab"
+        },
+        "type=double": {
+            "model": "trekfiles:block/floor/defiant/path_side"
+        },
+        "type=top": {
+            "model": "trekfiles:block/floor/defiant/path_side_slab_top"
+        }
+    }
+}

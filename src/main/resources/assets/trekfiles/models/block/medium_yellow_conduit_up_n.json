@@ -1,7 +1,0 @@
-{
-    "parent": "trekfiles:block/medium_conduit_n",
-    "textures": {
-    	"top": "trekfiles:block/conduit_top",
-    	"side": "trekfiles:block/yellow_conduit_side_up"
-    }
-}

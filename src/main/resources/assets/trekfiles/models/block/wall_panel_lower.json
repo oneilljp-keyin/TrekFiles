@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "trekfiles:block/wall_panel_lower",
+		"up": "trekfiles:block/panel_top",
+		"down": "trekfiles:block/panel_top",
+		"north": "trekfiles:block/wall_panel_lower",
+		"south": "trekfiles:block/wall_panel_lower",
+		"east": "trekfiles:block/wall_panel_lower",
+		"west": "trekfiles:block/wall_panel_lower"
+	}
+}

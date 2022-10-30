@@ -1,0 +1,6 @@
+{
+  "parent": "trekfiles:block/partition/ns",
+  "textures": {
+    "side": "trekfiles:block/partition_blue_forcefield"
+  }
+}

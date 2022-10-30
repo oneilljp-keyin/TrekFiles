@@ -1,0 +1,13 @@
+{
+	"parent": "trekfiles:block/replicator",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"side": "trekfiles:block/wall_panel_full_lower",
+		"back": "trekfiles:block/wall_panel_upper",
+		"panel": "trekfiles:block/replicator_panel",
+		"tray": "minecraft:block/iron_block",
+		"front": "trekfiles:block/wall_panel_full_lower",
+		"top": "trekfiles:block/replicator_top",
+		"inside": "minecraft:block/coal_block"
+	}
+}

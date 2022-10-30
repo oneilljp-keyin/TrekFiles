@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "trekfiles:block/door_galaxy_brown_lower_rh",
+    "top": "trekfiles:block/door_galaxy_brown_upper_rh"
+  }
+}

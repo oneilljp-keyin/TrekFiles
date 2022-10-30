@@ -1,0 +1,6 @@
+{
+  "parent": "trekfiles:block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "trekfiles:block/hatch_door"
+  }
+}

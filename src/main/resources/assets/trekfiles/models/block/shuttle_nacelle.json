@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "trekfiles:block/shuttle_nacelle_top",
+    "side": "trekfiles:block/shuttle_nacelle_side"
+  }
+}

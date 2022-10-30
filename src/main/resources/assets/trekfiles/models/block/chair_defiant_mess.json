@@ -1,0 +1,7 @@
+{
+  "parent": "trekfiles:block/chair_defiant",
+  "textures": {
+    "pattern": "trekfiles:block/chair_defiant_brown",
+    "base": "minecraft:block/gray_concrete"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "trekfiles:block/partition/post",
+  "textures": {
+    "side": "minecraft:block/black_concrete"
+  }
+}

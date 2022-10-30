@@ -1,0 +1,63 @@
+{
+  "parent": "trekfiles:block/tng_block",
+  "__comment": "Model_generated_using_MrCrayfish\u0027s_Model_Creator_(http://mrcrayfish.com/modelcreator/)",
+  "textures": {
+    "particle": "#post",
+    "0": "#rail",
+    "1": "#post"
+  },
+  "elements": [
+    {
+      "name": "Element",
+      "from": [ 7.25, 15.0, 8.75 ],
+      "to": [ 8.75, 16.0, 16.0 ],
+      "faces": {
+        "north": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "east":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "south": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "west":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "up":    { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#0" },
+        "down":  { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#0" }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 7.25, 15.0, 0.0 ],
+      "to": [ 8.75, 16.0, 8.8 ],
+      "faces": {
+        "north": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "east":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "south": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "west":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "up":    { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#0" },
+        "down":  { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#0" }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 7.25, 0.0, 7.25 ],
+      "to": [ 8.75, 15.0, 8.75 ],
+      "faces": {
+        "north": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#1" },
+        "east":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#1" },
+        "south": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#1" },
+        "west":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#1" },
+        "up":    { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#1" },
+        "down":  { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#1" }
+      }
+    },
+    {
+      "name": "Element",
+      "from": [ 8.75, 15.0, 7.25 ],
+      "to": [ 16.0, 16.0, 8.75 ],
+      "faces": {
+        "north": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "east":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "south": { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "west":  { "uv": [ 6.5, 0.0, 9.5, 16.0 ], "texture": "#0" },
+        "up":    { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#0" },
+        "down":  { "uv": [ 11.0, 2.0, 12.0, 3.0 ], "texture": "#0" }
+      }
+    }
+  ]
+}

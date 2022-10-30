@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "trekfiles:block/door_sensor"
+    },
+    "powered=true": {
+      "model": "trekfiles:block/door_sensor"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "trekfiles:block/access_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "trekfiles:block/access_ladder"
+    },
+    "facing=south": {
+      "model": "trekfiles:block/access_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trekfiles:block/access_ladder",
+      "y": 270
+    }
+  }
+}

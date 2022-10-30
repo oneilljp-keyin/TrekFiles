@@ -1,0 +1,22 @@
+{
+	"parent": "trekfiles:block/tng_block",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "trekfiles:block/replicator_tray_holder",
+		"particle": "trekfiles:block/replicator_tray_holder"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 7],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [0, 1, 16, 2], "texture": "#0"},
+				"east": {"uv": [0, 1, 16, 2], "texture": "#0"},
+				"south": {"uv": [0, 1, 16, 2], "texture": "#0"},
+				"west": {"uv": [0, 1, 16, 2], "texture": "#0"},
+				"up": {"uv": [0, 1, 16, 11], "texture": "#0"},
+				"down": {"uv": [0, 1, 16, 2], "texture": "#0"}
+			}
+		}
+	]
+}
