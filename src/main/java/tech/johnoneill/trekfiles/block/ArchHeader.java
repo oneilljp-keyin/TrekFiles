@@ -28,13 +28,9 @@ public class ArchHeader extends HorizontalDirectionalBlock {
     public static final EnumProperty<DoorHingeSide> HINGE = BlockStateProperties.DOOR_HINGE;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
-    private static final Optional<VoxelShape> SHAPE_RIGHT = Stream.of(
-            Block.box(14, 0, 0, 16, 8, 16)
-    ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
+    private static final Optional<VoxelShape> SHAPE_RIGHT = Optional.of(Block.box(14, 0, 0, 16, 8, 16));
 
-    private static final Optional<VoxelShape> SHAPE_LEFT = Stream.of(
-            Block.box(0, 0, 0, 2, 8, 16)
-    ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
+    private static final Optional<VoxelShape> SHAPE_LEFT = Optional.of(Block.box(0, 0, 0, 2, 8, 16));
 
     public ArchHeader(Properties properties) {
         super(properties);

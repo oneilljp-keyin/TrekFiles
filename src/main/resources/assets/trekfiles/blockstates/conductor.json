@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "trekfiles:block/conductor",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "trekfiles:block/conductor"
+    },
+    "axis=z": {
+      "model": "trekfiles:block/conductor",
+      "x": 90
+    }
+  }
+}

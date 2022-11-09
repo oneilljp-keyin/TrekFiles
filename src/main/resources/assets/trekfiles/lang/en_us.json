@@ -38,6 +38,7 @@
 
 	"block.trekfiles.arch_defiant": "Corridor Arch (Defiant)",
 	"block.trekfiles.arch_header_defiant": "Corridor Arch Header (Defiant)",
+	"block.trekfiles.arch_with_header_defiant": "Corridor Arch with Header (Defiant)",
 
 	"block.trekfiles.captains_chair_tos": "Captian's Chair (Constitution)",
 	"block.trekfiles.captains_chair_defiant": "Captian's Chair (Defiant)",
@@ -69,6 +70,7 @@
 	"block.trekfiles.wall_panel_lower": "Wall Panel Lower (Defiant)",
 
 	"block.trekfiles.shuttlecraft_type_18": "Shuttlecraft - Type 18",
+	"block.trekfiles.escape_pod": "Escape Pod",
 
 	"block.trekfiles.replicator_one": "Replicator",
 	"block.trekfiles.replicator_two": "Replicator (Defiant)",
@@ -78,6 +80,22 @@
 	"block.trekfiles.floor_defiant_path_intersect": "Defiant Floor (Path Intersection)",
 	"block.trekfiles.floor_defiant_path_corner": "Defiant Floor (Path Corner)",
 	"block.trekfiles.floor_defiant_no_path": "Defiant Floor (No Path)",
+	"block.trekfiles.floor_defiant_path_side_slab": "Defiant Floor Slab (Path Side)",
+	"block.trekfiles.floor_defiant_path_intersect_slab": "Defiant Floor Slab (Path Intersection)",
+	"block.trekfiles.floor_defiant_path_corner_slab": "Defiant Floor Slab (Path Corner)",
+	"block.trekfiles.floor_defiant_no_path_slab": "Defiant Floor Slab (No Path)",
+
+	"block.trekfiles.transducer_blue_up": "Blue Transducer (Up)",
+	"block.trekfiles.transducer_blue_down": "Blue Transducer (Down)",
+	"block.trekfiles.transducer_blue": "Blue Transducer",
+	"block.trekfiles.transducer_red_up": "Red Transducer (Up)",
+	"block.trekfiles.transducer_red_down": "Red Transducer (Down)",
+	"block.trekfiles.transducer_red": "Red Transducer",
+	"block.trekfiles.transducer_yellow_down": "Yellow Transducer (Down)",
+	"block.trekfiles.transducer_yellow_up": "Yellow Transducer (Up)",
+	"block.trekfiles.transducer_yellow": "Yellow Transducer",
+
+	"block.trekfiles.conductor": "Conductor",
 
 	"block.trekfiles.conduit_large_up_blue": "Large Blue Conduit (Up)",
 	"block.trekfiles.conduit_large_up_red": "Large Red Conduit (Up)",

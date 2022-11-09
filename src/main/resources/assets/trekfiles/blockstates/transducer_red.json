@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "trekfiles:block/transducer/red/neutral",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "trekfiles:block/transducer/red/neutral"
+    },
+    "axis=z": {
+      "model": "trekfiles:block/transducer/red/neutral",
+      "x": 90
+    }
+  }
+}

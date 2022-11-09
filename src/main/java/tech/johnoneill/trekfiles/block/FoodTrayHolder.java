@@ -2,10 +2,8 @@ package tech.johnoneill.trekfiles.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -14,38 +12,35 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.Half;
-import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
+import tech.johnoneill.trekfiles.TrekFiles;
 
-import javax.annotation.Nullable;
+import java.util.EnumMap;
+import java.util.Map;
+import java.util.Optional;
 
 public class FoodTrayHolder extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
-    protected static final VoxelShape BOTTOM_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 1.0D, 9.0D);
-    protected static final VoxelShape TOP_AABB = Block.box(0.0D, 15.0D, 0.0D, 16.0D, 16.0D, 9.0D);
+    protected static final Optional<VoxelShape> BOTTOM_AABB = Optional.of(Block.box(0.0D, 0.0D, 7.0D, 16.0D, 1.0D, 16.0D));
+    protected static final Optional<VoxelShape> TOP_AABB = Optional.of(Block.box(0.0D, 15.0D, 7.0D, 16.0D, 16.0D, 16.0D));
+    protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
 
     public FoodTrayHolder(Properties properties) {
         super(properties);
         this.registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH).setValue(HALF, Half.BOTTOM));
     }
 
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
-            return state.getValue(HALF) == Half.TOP ? TOP_AABB : BOTTOM_AABB;
-    }
-
-    protected void playSound(@Nullable Player player, Level level, BlockPos pos, boolean b) {
-        if (b) {
-            int i = this.material == Material.HEAVY_METAL ? 1037 : 1007;
-            level.levelEvent(player, i, pos, 0);
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
+        if(state.getValue(HALF) == Half.TOP) {
+            runCalculation(TOP_AABB.orElse(Shapes.block()));
         } else {
-            int j = this.material == Material.HEAVY_METAL ? 1036 : 1013;
-            level.levelEvent(player, j, pos, 0);
+            runCalculation(BOTTOM_AABB.orElse(Shapes.block()));
         }
-
-        level.gameEvent(player, b ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+        return SHAPES.get(state.getValue(FACING));
     }
 
     @Override
@@ -62,9 +57,16 @@ public class FoodTrayHolder extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING, HALF);
     }
+
+    protected void runCalculation(VoxelShape shape) {
+        for (Direction direction : Direction.values()) {
+            SHAPES.put(direction, TrekFiles.calculateShapes(direction, shape));
+        }
+    }
+
 
 }

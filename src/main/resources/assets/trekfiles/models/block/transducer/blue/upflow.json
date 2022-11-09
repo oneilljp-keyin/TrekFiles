@@ -1,0 +1,7 @@
+{
+  "parent": "trekfiles:block/transducer/transducer",
+  "textures": {
+    "cap": "minecraft:block/gray_concrete",
+    "middle": "trekfiles:block/blue_conduit_side_up"
+  }
+}

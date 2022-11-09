@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/door_bottom_right_open",
+  "parent": "trekfiles:block/door/hatch_wide_bottom_right_open",
   "textures": {
     "bottom": "trekfiles:block/door_defiant_wide_lower_rh",
     "top": "trekfiles:block/door_defiant_wide_upper_rh"

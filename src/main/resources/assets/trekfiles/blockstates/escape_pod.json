@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/escape_pod"},
+        "facing=south": { "model":  "trekfiles:block/escape_pod", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/escape_pod", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/escape_pod", "y": 270}
+    }
+}

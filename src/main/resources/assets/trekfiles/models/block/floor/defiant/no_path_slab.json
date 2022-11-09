@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/tng_block",
 	"textures": {
 		"2": "block/sand",
 		"3": "trekfiles:block/wall_panel_full_upper",

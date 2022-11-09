@@ -24,3 +24,4 @@ run
 # Files from Forge MDK
 forge*changelog.txt
 /src/main/resources/assets/trekfiles/models/voxmodels/
+src/main/resources/assets/trekfiles/blockstates/medium_conduit.json
