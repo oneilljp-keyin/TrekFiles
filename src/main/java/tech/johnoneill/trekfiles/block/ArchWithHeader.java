@@ -33,7 +33,6 @@ public class ArchWithHeader extends HorizontalDirectionalBlock {
             Block.box(14, 0, 0, 16, 13, 1.5),
             Block.box(14, 14, 1.5, 16, 15, 2.5),
             Block.box(14, 13, 0, 16, 16, 1.5),
-            Block.box(14, 16, 0, 16, 24, 16),
             Block.box(14, 15, 3.5, 16, 16, 16),
             Block.box(14, 15, 1.5, 16, 16, 3.5)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
@@ -43,7 +42,6 @@ public class ArchWithHeader extends HorizontalDirectionalBlock {
             Block.box(0, 0, 0, 2, 13, 1.5),
             Block.box(0, 14, 1.5, 2, 15, 2.5),
             Block.box(0, 13, 0, 2, 16, 1.5),
-            Block.box(0, 16, 0, 2, 24, 16),
             Block.box(0, 15, 3.5, 2, 16, 16),
             Block.box(0, 15, 1.5, 2, 16, 3.5)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));

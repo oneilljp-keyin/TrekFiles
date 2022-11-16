@@ -1,66 +1,8 @@
 {
-	"credit": "Made with Blockbench",
-	"parent": "trekfiles:block/tng_block",
+	"parent": "block/cube_bottom_top",
 	"textures": {
-		"0": "block/white_wool",
-		"1": "block/red_wool",
-		"2": "block/sand",
-		"3": "trekfiles:block/wall_panel_full_upper",
-		"4": "trekfiles:block/wall_panel",
-		"particle": "trekfiles:block/wall_panel_full_upper"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [3, 16, 3],
-			"faces": {
-				"north": {"uv": [13, 0, 16, 16], "texture": "#3"},
-				"south": {"uv": [7, 0, 10, 8], "texture": "#0"},
-				"west": {"uv": [0, 0, 3, 16], "texture": "#3"},
-				"up": {"uv": [11, 8, 14, 11], "texture": "#0"},
-				"down": {"uv": [0, 0, 3, 3], "texture": "#4"}
-			}
-		},
-		{
-			"from": [0, 0, 3],
-			"to": [3, 16, 5],
-			"faces": {
-				"east": {"uv": [1, 0, 3, 8], "texture": "#1"},
-				"west": {"uv": [3, 0, 5, 16], "texture": "#3"},
-				"up": {"uv": [6, 9, 9, 11], "texture": "#1"},
-				"down": {"uv": [13, 3, 16, 5], "texture": "#4"}
-			}
-		},
-		{
-			"from": [3, 0, 0],
-			"to": [5, 16, 5],
-			"faces": {
-				"north": {"uv": [11, 0, 13, 16], "texture": "#3"},
-				"up": {"uv": [7, 0, 9, 5], "texture": "#1"},
-				"down": {"uv": [0, 0, 1.75, 5], "texture": "#4"}
-			}
-		},
-		{
-			"from": [0, 0, 5],
-			"to": [16, 16, 16],
-			"faces": {
-				"east": {"uv": [0, 0, 11, 16], "texture": "#3"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#3"},
-				"west": {"uv": [5, 0, 16, 16], "texture": "#3"},
-				"up": {"uv": [0, 0, 16, 11], "texture": "#2"},
-				"down": {"uv": [0, 5, 16, 16], "texture": "#4"}
-			}
-		},
-		{
-			"from": [5, 0, 0],
-			"to": [16, 16, 5],
-			"faces": {
-				"north": {"uv": [0, 0, 11, 16], "texture": "#3"},
-				"east": {"uv": [11, 0, 16, 16], "texture": "#3"},
-				"south": {"uv": [0, 0, 11, 8], "texture": "#2"},
-				"up": {"uv": [0, 11, 11, 16], "texture": "#2"},
-				"down": {"uv": [0, 0, 11, 5], "texture": "#4"}
-			}
-		}
-	]
+		"top": "trekfiles:block/carpet_defiant_path_corner",
+		"side": "trekfiles:block/wall_panel_full_upper",
+		"bottom": "trekfiles:block/wall_panel"
+	}
 }

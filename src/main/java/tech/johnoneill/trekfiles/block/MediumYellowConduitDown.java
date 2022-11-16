@@ -32,12 +32,12 @@ public class MediumYellowConduitDown extends Block {
 	public MediumYellowConduitDown(Properties properties) {
 		super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(NORTH, Boolean.valueOf(false))
-                .setValue(EAST, Boolean.valueOf(false))
-                .setValue(SOUTH, Boolean.valueOf(false))
-                .setValue(WEST, Boolean.valueOf(false))
-                .setValue(UP, Boolean.valueOf(false))
-                .setValue(DOWN, Boolean.valueOf(false)));
+                .setValue(NORTH, Boolean.FALSE)
+                .setValue(EAST, Boolean.FALSE)
+                .setValue(SOUTH, Boolean.FALSE)
+                .setValue(WEST, Boolean.FALSE)
+                .setValue(UP, Boolean.FALSE)
+                .setValue(DOWN, Boolean.FALSE));
     }
 
 	@Override

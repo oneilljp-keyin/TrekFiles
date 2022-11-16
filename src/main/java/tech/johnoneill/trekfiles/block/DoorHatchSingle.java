@@ -2,6 +2,7 @@ package tech.johnoneill.trekfiles.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -29,6 +30,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import tech.johnoneill.trekfiles.sound.ModSounds;
 
 import javax.annotation.Nullable;
 
@@ -39,25 +41,25 @@ public class DoorHatchSingle extends Block {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     protected static final VoxelShape SOUTH_OPEN = Shapes.join(
-            Block.box(0, 0, 0, 2, 16, 2),
-            Block.box(14, 0, 0, 16, 16, 2),
+            Block.box(0, 0, 3, 2, 16, 5),
+            Block.box(14, 0, 3, 16, 16, 5),
             BooleanOp.OR);
-    protected static final VoxelShape SOUTH_CLOSED = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 2.0D);
+    protected static final VoxelShape SOUTH_CLOSED = Block.box(0.0D, 0.0D, 3.0D, 16.0D, 16.0D, 5.0D);
     protected static final VoxelShape NORTH_OPEN = Shapes.join(
-            Block.box(14, 0, 14, 16, 16, 16),
-            Block.box(0, 0, 14, 2, 16, 16),
+            Block.box(0, 0, 11, 2, 16, 13),
+            Block.box(14, 0, 11, 16, 16, 13),
             BooleanOp.OR);
-    protected static final VoxelShape NORTH_CLOSED = Block.box(0.0D, 0.0D, 14.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape NORTH_CLOSED = Block.box(0.0D, 0.0D, 11.0D, 16.0D, 16.0D, 13.0D);
     protected static final VoxelShape WEST_OPEN = Shapes.join(
-            Block.box(14, 0, 14, 16, 16, 16),
-            Block.box(14, 0, 0, 16, 16, 2),
+            Block.box(11, 0, 0, 13, 16, 2),
+            Block.box(11, 0, 14, 13, 16, 16),
             BooleanOp.OR);
-    protected static final VoxelShape WEST_CLOSED = Block.box(14.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape WEST_CLOSED = Block.box(11.0D, 0.0D, 0.0D, 13.0D, 16.0D, 16.0D);
     protected static final VoxelShape EAST_OPEN = Shapes.join(
-            Block.box(0, 0, 0, 2, 16, 2),
-            Block.box(0, 0, 14, 2, 16, 16),
+            Block.box(3, 0, 0, 5, 16, 2),
+            Block.box(3, 0, 14, 5, 16, 16),
             BooleanOp.OR);
-    protected static final VoxelShape EAST_CLOSED = Block.box(0.0D, 0.0D, 0.0D, 2.0D, 16.0D, 16.0D);
+    protected static final VoxelShape EAST_CLOSED = Block.box(3.0D, 0.0D, 0.0D, 5.0D, 16.0D, 16.0D);
 
     public DoorHatchSingle(Properties properties) {
         super(properties);
@@ -178,7 +180,8 @@ public class DoorHatchSingle extends Block {
     public void setOpen(@Nullable Entity entity, Level level, BlockState state, BlockPos pos, boolean b) {
         if (state.is(this) && state.getValue(OPEN) != b) {
             level.setBlock(pos, state.setValue(OPEN, b), 10);
-            this.playSound(level, pos, b);
+            level.playSound((Player)null, pos, ModSounds.DEFAULT_DOOR_OPEN.get(), SoundSource.BLOCKS, 1f, 1f);
+//            this.playSound(level, pos, b);
             level.gameEvent(entity, b ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
         }
     }

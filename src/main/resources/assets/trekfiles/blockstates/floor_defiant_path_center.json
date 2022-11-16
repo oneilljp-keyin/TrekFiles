@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/floor/defiant/path_center"},
+        "facing=south": { "model":  "trekfiles:block/floor/defiant/path_center", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/floor/defiant/path_center", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/floor/defiant/path_center", "y": 270}
+    }
+}

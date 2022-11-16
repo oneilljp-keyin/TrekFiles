@@ -40,14 +40,14 @@ public class DoorHatchWide extends Block {
     public static final EnumProperty<DoorHingeSide> HINGE = BlockStateProperties.DOOR_HINGE;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
-    protected static final VoxelShape NORTH_CLOSED = Block.box(0.0D, 0.0D, 14.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape NORTH_OPEN = Block.box(0.0D, 0.0D, 14.0D, 2.0D, 16.0D, 16.0D);
-    protected static final VoxelShape SOUTH_CLOSED = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 2.0D);
-    protected static final VoxelShape SOUTH_OPEN = Block.box(14.0D, 0.0D, 0.0D, 16.0D, 16.0D, 2.0D);
-    protected static final VoxelShape EAST_CLOSED = Block.box(0.0D, 0.0D, 0.0D, 2.0D, 16.0D, 16.0D);
-    protected static final VoxelShape EAST_OPEN = Block.box(0.0D, 0.0D, 0.0D, 2.0D, 16.0D, 2.0D);
-    protected static final VoxelShape WEST_CLOSED = Block.box(14.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape WEST_OPEN = Block.box(14.0D, 0.0D, 14.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape NORTH_CLOSED = Block.box(0.0D, 0.0D, 11.0D, 16.0D, 16.0D, 13.0D);
+    protected static final VoxelShape NORTH_OPEN = Block.box(0.0D, 0.0D, 11.0D, 2.0D, 16.0D, 13.0D);
+    protected static final VoxelShape SOUTH_CLOSED = Block.box(0.0D, 0.0D, 3.0D, 16.0D, 16.0D, 5.0D);
+    protected static final VoxelShape SOUTH_OPEN = Block.box(14.0D, 0.0D, 3.0D, 16.0D, 16.0D, 5.0D);
+    protected static final VoxelShape EAST_CLOSED = Block.box(3.0D, 0.0D, 0.0D, 5.0D, 16.0D, 16.0D);
+    protected static final VoxelShape EAST_OPEN = Block.box(3.0D, 0.0D, 0.0D, 5.0D, 16.0D, 2.0D);
+    protected static final VoxelShape WEST_CLOSED = Block.box(11.0D, 0.0D, 0.0D, 13.0D, 16.0D, 16.0D);
+    protected static final VoxelShape WEST_OPEN = Block.box(11.0D, 0.0D, 14.0D, 13.0D, 16.0D, 16.0D);
 
     public DoorHatchWide(Properties properties) {
         super(properties);

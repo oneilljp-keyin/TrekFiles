@@ -1,0 +1,14 @@
+{
+  "default_door_open": {
+    "subtitle": "sounds.trekfiles.default_door_open",
+    "sounds" : [
+      "trekfiles:default_door_open"
+    ]
+  },
+  "default_door_close": {
+    "subtitle": "sounds.trekfiles.default_door_close",
+    "sounds" : [
+      "trekfiles:default_door_close"
+    ]
+  }
+}

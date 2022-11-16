@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/defiant_helm"},
+        "facing=south": { "model":  "trekfiles:block/defiant_helm", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/defiant_helm", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/defiant_helm", "y": 270}
+    }
+}

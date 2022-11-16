@@ -1,17 +1,8 @@
 package tech.johnoneill.trekfiles;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.HolderSet;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.DoorHingeSide;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,6 +14,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.init.BlockInit;
 import tech.johnoneill.trekfiles.init.ItemInit;
+import tech.johnoneill.trekfiles.painting.ModPaintings;
+import tech.johnoneill.trekfiles.sound.ModSounds;
 
 @Mod(TrekFiles.MOD_ID)
 public class TrekFiles {
@@ -42,6 +35,9 @@ public class TrekFiles {
 		
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
+
+		ModPaintings.register(bus);
+		ModSounds.register(bus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
 	}

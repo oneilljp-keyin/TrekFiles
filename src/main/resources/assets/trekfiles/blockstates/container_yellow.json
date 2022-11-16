@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/container_yellow"},
+        "facing=south": { "model":  "trekfiles:block/container_yellow", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/container_yellow", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/container_yellow", "y": 270}
+    }
+}

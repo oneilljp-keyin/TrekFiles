@@ -1,46 +1,9 @@
 {
-	"credit": "Made with Blockbench",
-	"parent": "trekfiles:block/tng_block",
+	"parent": "minecraft:block/slab",
 	"textures": {
-		"0": "block/white_wool",
-		"1": "block/red_wool",
-		"2": "block/sand",
-		"3": "trekfiles:block/wall_panel_full_upper",
-		"4": "trekfiles:block/wall_panel",
+		"top": "trekfiles:block/carpet_defiant_path_side",
+		"side": "trekfiles:block/wall_panel_full_upper",
+		"bottom": "trekfiles:block/wall_panel",
 		"particle": "trekfiles:block/wall_panel_full_upper"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [3, 8, 16],
-			"faces": {
-				"north": {"uv": [13, 8, 16, 16], "texture": "#3"},
-				"south": {"uv": [0, 8, 3, 16], "texture": "#3"},
-				"west": {"uv": [0, 8, 16, 16], "texture": "#3"},
-				"up": {"uv": [7, 0, 10, 16], "texture": "#0"},
-				"down": {"uv": [7, 0, 10, 16], "texture": "#4"}
-			}
-		},
-		{
-			"from": [3, 0, 0],
-			"to": [5, 8, 16],
-			"faces": {
-				"north": {"uv": [10, 8, 12, 16], "texture": "#3"},
-				"south": {"uv": [3, 8, 5, 16], "texture": "#3"},
-				"up": {"uv": [13, 0, 15, 16], "texture": "#1"},
-				"down": {"uv": [9, 0, 11, 16], "texture": "#4"}
-			}
-		},
-		{
-			"from": [5, 0, 0],
-			"to": [16, 8, 16],
-			"faces": {
-				"north": {"uv": [0, 8, 11, 16], "texture": "#3"},
-				"east": {"uv": [0, 8, 16, 16], "texture": "#3"},
-				"south": {"uv": [5, 8, 16, 16], "texture": "#3"},
-				"up": {"uv": [0, 0, 11, 16], "texture": "#2"},
-				"down": {"uv": [0, 0, 11, 16], "texture": "#4"}
-			}
-		}
-	]
+	}
 }

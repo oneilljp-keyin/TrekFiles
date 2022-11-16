@@ -1,5 +1,5 @@
 {
-  "parent": "trekfiles:block/door/hatch_single_bottom_open",
+  "parent": "trekfiles:block/door/hatch_single_bottom_left_open",
   "textures": {
     "bottom": "trekfiles:block/door_defiant_single_lower",
     "top": "trekfiles:block/door_defiant_single_upper"

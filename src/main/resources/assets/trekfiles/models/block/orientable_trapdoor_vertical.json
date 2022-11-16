@@ -2,14 +2,15 @@
 	"credit": "Made with Blockbench",
 	"parent": "trekfiles:block/tng_block",
 	"textures": {
-		"particle": "#texture"
+		"particle": "trekfiles:block/hatch_door",
+		"texture": "trekfiles:block/hatch_door"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 15],
 			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 16, 16, 0], "texture": "#texture"},
+				"north": {"uv": [16, 16, 0, 0], "texture": "#texture"},
 				"east": {"uv": [14.5, 16, 16, 0], "rotation": 90, "texture": "#texture", "cullface": "east"},
 				"south": {"uv": [0, 16, 16, 0], "texture": "#texture", "cullface": "south"},
 				"west": {"uv": [0, 0, 1.25, 16], "rotation": 90, "texture": "#texture", "cullface": "west"},

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/wall_panel_vertical_slab_upper"},
+        "facing=south": { "model":  "trekfiles:block/wall_panel_vertical_slab_upper", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/wall_panel_vertical_slab_upper", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/wall_panel_vertical_slab_upper", "y": 270}
+    }
+}

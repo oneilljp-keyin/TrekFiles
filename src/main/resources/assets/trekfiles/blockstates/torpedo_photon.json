@@ -1,8 +1,16 @@
 {
     "variants": {
-        "facing=north": { "model":  "trekfiles:block/torpedo_photon"},
-        "facing=south": { "model":  "trekfiles:block/torpedo_photon", "y": 180},
-        "facing=east": { "model":  "trekfiles:block/torpedo_photon", "y": 90},
-        "facing=west": { "model":  "trekfiles:block/torpedo_photon", "y": 270}
+        "facing=north,type=bottom": { "model":  "trekfiles:block/torpedo_photon"},
+        "facing=north,type=double": { "model":  "trekfiles:block/torpedo_photon_stack"},
+        "facing=north,type=top":    { "model":  "trekfiles:block/torpedo_photon_upper"},
+        "facing=south,type=bottom": { "model":  "trekfiles:block/torpedo_photon", "y": 180},
+        "facing=south,type=double": { "model":  "trekfiles:block/torpedo_photon_stack", "y": 180},
+        "facing=south,type=top":    { "model":  "trekfiles:block/torpedo_photon_upper", "y": 180},
+        "facing=east,type=bottom": { "model":  "trekfiles:block/torpedo_photon", "y": 90},
+        "facing=east,type=double": { "model":  "trekfiles:block/torpedo_photon_stack", "y": 90},
+        "facing=east,type=top":    { "model":  "trekfiles:block/torpedo_photon_upper", "y": 90},
+        "facing=west,type=bottom": { "model":  "trekfiles:block/torpedo_photon", "y": 270},
+        "facing=west,type=double": { "model":  "trekfiles:block/torpedo_photon_stack", "y": 270},
+        "facing=west,type=top":    { "model":  "trekfiles:block/torpedo_photon_upper", "y": 270}
     }
 }

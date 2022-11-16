@@ -1,0 +1,8 @@
+{
+	"parent": "trekfiles:block/container_block",
+	"textures": {
+		"top": "trekfiles:block/container_blue_top",
+		"side": "trekfiles:block/container_side",
+		"front": "trekfiles:block/container_blue"
+	}
+}

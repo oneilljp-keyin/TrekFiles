@@ -1,0 +1,9 @@
+{
+  "parent": "trekfiles:block/door/hatch_single_diagonal_top_right_open",
+  "textures": {
+    "bottom": "trekfiles:block/door_defiant_single_lower",
+    "top": "trekfiles:block/door_defiant_single_upper",
+    "upper": "trekfiles:block/wall_panel_upper",
+    "lower": "trekfiles:block/wall_panel_lower"
+  }
+}

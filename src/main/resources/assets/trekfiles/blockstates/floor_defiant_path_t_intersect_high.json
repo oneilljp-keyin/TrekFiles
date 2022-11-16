@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/floor/defiant/path_t_intersect_high"},
+        "facing=south": { "model":  "trekfiles:block/floor/defiant/path_t_intersect_high", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/floor/defiant/path_t_intersect_high", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/floor/defiant/path_t_intersect_high", "y": 270}
+    }
+}

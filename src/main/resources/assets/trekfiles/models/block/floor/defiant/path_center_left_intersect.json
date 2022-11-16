@@ -1,0 +1,8 @@
+{
+	"parent": "block/cube_bottom_top",
+	"textures": {
+		"top": "trekfiles:block/carpet_defiant_path_center_left_intersect",
+		"side": "trekfiles:block/wall_panel_full_upper",
+		"bottom": "trekfiles:block/wall_panel"
+	}
+}

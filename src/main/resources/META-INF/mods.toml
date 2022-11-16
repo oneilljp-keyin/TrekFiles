@@ -10,9 +10,6 @@ credits="A Tutorial Mod by Cy4"
 authors="Cy4 and John O'Neill"
 
 description='''
-This is the Description. It can be many lines
-
-Go here for tutorial https://www.youtube.com/watch?v=xRXWa5HRAxU
 '''
 [[dependencies.trekfiles]]
     modId="forge" #mandatory

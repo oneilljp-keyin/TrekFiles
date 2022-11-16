@@ -1,0 +1,7 @@
+{
+	"parent": "trekfiles:block/wall_panel_corner",
+	"textures": {
+		"side": "trekfiles:block/wall_panel_upper",
+		"end": "trekfiles:block/panel_top"
+	}
+}

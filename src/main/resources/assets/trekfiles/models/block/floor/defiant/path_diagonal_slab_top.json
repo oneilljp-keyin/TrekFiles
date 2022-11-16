@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:block/slab_top",
+	"textures": {
+		"top": "trekfiles:block/carpet_defiant_path_diagonal",
+		"side": "trekfiles:block/wall_panel_full_upper",
+		"bottom": "trekfiles:block/wall_panel",
+		"particle": "trekfiles:block/wall_panel_full_upper"
+	}
+}
