@@ -36,6 +36,11 @@ public class LCARSDisplay extends HorizontalDirectionalBlock {
     }
 
     @Override
+    public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+        return super.getLightEmission(state, level, pos);
+    }
+
+    @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockState blockstate = this.defaultBlockState();
         Direction direction = context.getClickedFace();

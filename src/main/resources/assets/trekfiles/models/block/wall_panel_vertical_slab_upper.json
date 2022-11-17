@@ -1,7 +1,33 @@
 {
-	"parent": "trekfiles:block/wall_panel_vertical_slab",
+	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/tng_block",
 	"textures": {
+		"particle": "trekfiles:block/wall_panel_upper",
 		"side": "trekfiles:block/wall_panel_upper",
 		"end": "trekfiles:block/panel_top"
-	}
+	},
+	"elements": [
+		{
+			"from": [0, 16, 8],
+			"to": [16, 24, 16],
+			"faces": {
+				"north": {"uv": [0.25, 5, 15.75, 13], "texture": "#side"},
+				"east": {"uv": [7.75, 5, 15.75, 13], "texture": "#side"},
+				"south": {"uv": [0.25, 5, 15.75, 13], "texture": "#side"},
+				"west": {"uv": [7.75, 5, 15.75, 13], "texture": "#side"},
+				"up": {"uv": [0, 8, 16, 16], "texture": "#end"}
+			}
+		},
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [8, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [8, 0, 16, 16], "texture": "#side"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#end"}
+			}
+		}
+	]
 }

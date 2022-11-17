@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "trekfiles:block/viewscreen_defiant",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "trekfiles:block/viewscreen_defiant"
+    },
+    "facing=south": {
+      "model": "trekfiles:block/viewscreen_defiant",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trekfiles:block/viewscreen_defiant",
+      "y": 270
+    }
+  }
+}

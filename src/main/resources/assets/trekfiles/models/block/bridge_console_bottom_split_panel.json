@@ -1,0 +1,51 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/tng_block",
+	"ambientocclusion": false,
+	"textures": {
+		"controls_left": "trekfiles:block/lcars_panel_lower_center",
+		"controls_right": "trekfiles:block/lcars_panel_lower_right",
+		"particle": "trekfiles:block/wall_panel_lower",
+		"side": "trekfiles:block/wall_panel_lower",
+		"end": "trekfiles:block/panel_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [8, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [8, 0, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 8], "rotation": 180, "texture": "#end"},
+				"down": {"uv": [0, 0, 16, 8], "rotation": 180, "texture": "#end"}
+			}
+		},
+		{
+			"from": [8, 14, 7.5],
+			"to": [16, 16, 14],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 15, 8]},
+			"faces": {
+				"east": {"uv": [0, 14, 7.5, 16], "texture": "#side"},
+				"south": {"uv": [0, 14, 16, 16], "texture": "#side"},
+				"west": {"uv": [8.5, 14, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 12.875], "texture": "#controls_right"},
+				"down": {"uv": [0, 8.5, 16, 16], "rotation": 180, "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 14, 7.5],
+			"to": [8, 16, 12],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 15, 8]},
+			"faces": {
+				"east": {"uv": [0, 14, 7.5, 16], "texture": "#side"},
+				"south": {"uv": [0, 14, 16, 16], "texture": "#side"},
+				"west": {"uv": [8.5, 14, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 8.125], "texture": "#controls_left"},
+				"down": {"uv": [0, 8.5, 16, 16], "rotation": 180, "texture": "#side"}
+			}
+		}
+	]
+}

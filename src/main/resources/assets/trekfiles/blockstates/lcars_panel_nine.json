@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "trekfiles:block/lcars_panel_nine",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "trekfiles:block/lcars_panel_nine"
+    },
+    "facing=south": {
+      "model": "trekfiles:block/lcars_panel_nine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trekfiles:block/lcars_panel_nine",
+      "y": 270
+    }
+  }
+}

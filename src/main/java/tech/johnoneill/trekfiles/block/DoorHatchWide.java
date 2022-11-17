@@ -42,12 +42,16 @@ public class DoorHatchWide extends Block {
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     protected static final VoxelShape NORTH_CLOSED = Block.box(0.0D, 0.0D, 11.0D, 16.0D, 16.0D, 13.0D);
     protected static final VoxelShape NORTH_OPEN = Block.box(0.0D, 0.0D, 11.0D, 2.0D, 16.0D, 13.0D);
+    protected static final VoxelShape NORTH_OPEN_RIGHT = Block.box(14.0D, 0.0D, 11.0D, 16.0D, 16.0D, 13.0D);
     protected static final VoxelShape SOUTH_CLOSED = Block.box(0.0D, 0.0D, 3.0D, 16.0D, 16.0D, 5.0D);
     protected static final VoxelShape SOUTH_OPEN = Block.box(14.0D, 0.0D, 3.0D, 16.0D, 16.0D, 5.0D);
+    protected static final VoxelShape SOUTH_OPEN_RIGHT = Block.box(0.0D, 0.0D, 3.0D, 2.0D, 16.0D, 5.0D);
     protected static final VoxelShape EAST_CLOSED = Block.box(3.0D, 0.0D, 0.0D, 5.0D, 16.0D, 16.0D);
     protected static final VoxelShape EAST_OPEN = Block.box(3.0D, 0.0D, 0.0D, 5.0D, 16.0D, 2.0D);
+    protected static final VoxelShape EAST_OPEN_RIGHT = Block.box(3.0D, 0.0D, 14.0D, 5.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_CLOSED = Block.box(11.0D, 0.0D, 0.0D, 13.0D, 16.0D, 16.0D);
     protected static final VoxelShape WEST_OPEN = Block.box(11.0D, 0.0D, 14.0D, 13.0D, 16.0D, 16.0D);
+    protected static final VoxelShape WEST_OPEN_RIGHT = Block.box(11.0D, 0.0D, 0.0D, 13.0D, 16.0D, 2.0D);
 
     public DoorHatchWide(Properties properties) {
         super(properties);
@@ -62,13 +66,13 @@ public class DoorHatchWide extends Block {
         switch (direction) {
             case EAST:
             default:
-                return flag ? EAST_CLOSED : (flag1 ? EAST_OPEN : NORTH_OPEN);
+                return flag ? EAST_CLOSED : (flag1 ? EAST_OPEN : EAST_OPEN_RIGHT);
             case SOUTH:
-                return flag ? SOUTH_CLOSED : (flag1 ? SOUTH_OPEN : EAST_OPEN);
+                return flag ? SOUTH_CLOSED : (flag1 ? SOUTH_OPEN : SOUTH_OPEN_RIGHT);
             case WEST:
-                return flag ? WEST_CLOSED : (flag1 ? WEST_OPEN : SOUTH_OPEN);
+                return flag ? WEST_CLOSED : (flag1 ? WEST_OPEN : WEST_OPEN_RIGHT);
             case NORTH:
-                return flag ? NORTH_CLOSED : (flag1 ? NORTH_OPEN : WEST_OPEN);
+                return flag ? NORTH_CLOSED : (flag1 ? NORTH_OPEN : NORTH_OPEN_RIGHT);
         }
     }
 

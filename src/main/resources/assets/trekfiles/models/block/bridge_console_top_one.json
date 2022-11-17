@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/bridge_console_top",
+	"textures": {
+		"wall": "trekfiles:block/wall_panel_upper",
+		"main": "trekfiles:block/bridge_console_display_main_left",
+		"upper": "trekfiles:block/bridge_console_display_upper_left",
+		"particle": "trekfiles:block/wall_panel_lower",
+		"side": "trekfiles:block/wall_panel_lower",
+		"end": "trekfiles:block/panel_top"
+	}
+}

@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model":  "trekfiles:block/bridge_console_right"},
-        "facing=south": { "model":  "trekfiles:block/bridge_console_right", "y": 180},
-        "facing=east": { "model":  "trekfiles:block/bridge_console_right", "y": 90},
-        "facing=west": { "model":  "trekfiles:block/bridge_console_right", "y": 270}
-    }
-}

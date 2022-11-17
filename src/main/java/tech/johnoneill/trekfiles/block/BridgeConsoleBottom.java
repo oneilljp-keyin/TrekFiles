@@ -20,28 +20,15 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class DefiantHelmConsole extends HorizontalDirectionalBlock {
+public class BridgeConsoleBottom extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
     private static final Optional<VoxelShape> SHAPE = Stream.of(
-            Block.box(0, 0, 13, 16, 1, 22),
-            Block.box(12, 0, 22, 16, 1, 30),
-            Block.box(0, 0, 22, 4, 1, 30),
-            Block.box(0, 0, 30, 16, 1, 32),
-            Block.box(0, 0, 5, 16, 1, 13),
-            Block.box(1, 15.9, 5.5, 15, 16, 13.5),
-            Block.box(0.9, 0.1, 3, 3.4, 16, 8),
-            Block.box(12.6, 0.1, 3, 15.1, 16, 8),
-            Block.box(-10, 0, 5, 0, 1, 10),
-            Block.box(1, 11.5, 4, 15, 15, 13.5),
-            Block.box(1, 12, 4.5, 15, 15.9, 13.5),
-            Block.box(16, 0, 5, 26, 1, 10),
-            Block.box(3, 16, 4, 13, 20, 6),
-            Block.box(16, 0, 10, 26, 1, 15),
-            Block.box(-10, 0, 10, 0, 1, 15)
+            Block.box(0, 0, 0, 16, 16, 8),
+            Block.box(0.09999999999999964, 14, 7.5, 15.9, 16, 15)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
 
-    public DefiantHelmConsole(Properties properties) {
+    public BridgeConsoleBottom(Properties properties) {
         super(properties);
         this.registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH));
         runCalculation(SHAPE.orElse(Shapes.block()));
