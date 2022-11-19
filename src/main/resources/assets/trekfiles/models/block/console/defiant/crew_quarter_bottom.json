@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/tng_block",
+	"textures": {
+		"3": "trekfiles:block/wall_panel_full_lower",
+		"particle": "trekfiles:block/wall_panel_lower",
+		"side": "trekfiles:block/wall_panel_lower",
+		"end": "trekfiles:block/panel_top"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"east": {"uv": [8, 0, 0, 16], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#3", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#end", "cullface": "east"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#end"}
+			}
+		},
+		{
+			"from": [1, 14.25, 1],
+			"to": [15, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 10.25, 16, 12.25], "texture": "#side"},
+				"east": {"uv": [13.75, 8.5, 15.75, 16], "rotation": 270, "texture": "#3"},
+				"south": {"uv": [0, 6.5, 16, 8.5], "texture": "#side"},
+				"west": {"uv": [0.25, 8.5, 2.25, 16], "rotation": 90, "texture": "#3"},
+				"up": {"uv": [0, 8.5, 16, 16], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [0, 8.5, 16, 16], "texture": "#side"}
+			}
+		},
+		{
+			"from": [1, 14.625, 0],
+			"to": [15, 15.625, 1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 5.75, 16, 6.75], "texture": "#3"},
+				"east": {"uv": [14.75, 6.75, 15.75, 7.75], "texture": "#3"},
+				"west": {"uv": [0.25, 6.75, 1.25, 7.75], "texture": "#3"},
+				"up": {"uv": [0, 4.75, 16, 5.75], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [0, 4.75, 16, 3.75], "texture": "#3"}
+			}
+		}
+	]
+}

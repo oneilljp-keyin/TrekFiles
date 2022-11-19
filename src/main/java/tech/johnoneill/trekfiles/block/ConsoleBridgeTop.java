@@ -13,6 +13,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.TrekFiles;
 
 import java.util.EnumMap;
@@ -20,24 +21,24 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class BridgeConsoleTop extends HorizontalDirectionalBlock {
+public class ConsoleBridgeTop extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
     private static final Optional<VoxelShape> SHAPE = Stream.of(
-            Block.box(0, 7, 5, 16, 13, 8),
-            Block.box(0, 0, 0, 16, 16, 8),
-            Block.box(0, 6, 8, 16, 7, 8.5),
-            Block.box(0, 12.5, 8, 16, 16, 10.5)
+            Block.box(0, 0, 8, 16, 16, 16),
+            Block.box(0, 6, 7.5, 16, 7, 8),
+            Block.box(0, 12.5, 5.5, 16, 16, 8),
+            Block.box(0, 7, 8, 16, 13, 11)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
 
-    public BridgeConsoleTop(Properties properties) {
+    public ConsoleBridgeTop(Properties properties) {
         super(properties);
         this.registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH));
         runCalculation(SHAPE.orElse(Shapes.block()));
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
         return SHAPES.get(state.getValue(FACING));
     }
 
@@ -47,7 +48,7 @@ public class BridgeConsoleTop extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING);
     }

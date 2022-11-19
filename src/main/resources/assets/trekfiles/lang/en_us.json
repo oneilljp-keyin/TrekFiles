@@ -6,6 +6,15 @@
 
 	"block.trekfiles.holodeck_block": "Holodeck Block",
 	"block.trekfiles.shuttle_nacelle": "Shuttle Nacelle",
+	"block.trekfiles.transporter_pad": "Transporter Pad",
+	"block.trekfiles.transporter_wall_2360s": "Transporter Wall (2360s)",
+
+	"block.trekfiles.console_bridge_bottom_single_panel": "Bridge Console Bottom (with Single Control)",
+	"block.trekfiles.console_bridge_bottom_split_panel": "Bridge Console Bottom (with Split Control)",
+	"block.trekfiles.console_bridge_top_one": "Bridge Console Top",
+	"block.trekfiles.console_bridge_top_two": "Bridge Console Top",
+	"block.trekfiles.console_crew_quarter_bottom": "Crew Quarter Console Bottom",
+	"block.trekfiles.console_crew_quarter_top": "Crew Quarter Console Top",
 
 	"block.trekfiles.lcars_block_one": "LCARS Block",
 	"block.trekfiles.lcars_block_two": "LCARS Block",
@@ -23,50 +32,7 @@
 	"block.trekfiles.lcars_block_core": "LCARS Block (Computer Core)",
 	"block.trekfiles.lcars_block_medical": "LCARS Block (Medical)",
 
-	"block.trekfiles.hatch": "Hatch",
-	"block.trekfiles.hatch_door": "Hatch Horizontal (Split)",
-	"block.trekfiles.hatch_door_vertical": "Hatch Vertical (Split)",
-	"block.trekfiles.hatch_airlock": "Airlock Hatch",
-	"block.trekfiles.hatch_grate": "Floor Grate Hatch",
-	"block.trekfiles.hatch_trim": "Trim Hatch",
-
-	"block.trekfiles.door_defiant_single": "Door (Defiant)",
-	"block.trekfiles.door_defiant_single_diagonal": "Door (Defiant - Diagonal)",
-	"block.trekfiles.door_defiant_double": "Wide Door (Defiant)",
-	"block.trekfiles.door_defiant_cargo_wide": "Cargo Door (Defiant)",
-	"block.trekfiles.door_galaxy_single_brown": "Door (Galaxy - Brown)",
-	"block.trekfiles.door_galaxy_double_brown": "Wide Door (Galaxy - Brown)",
-	"block.trekfiles.door_galaxy_ten_forward": "Door (Galaxy - Ten Forward)",
-
-	"block.trekfiles.arch_defiant": "Corridor Arch (Defiant)",
-	"block.trekfiles.arch_header_defiant": "Corridor Arch Header (Defiant)",
-	"block.trekfiles.arch_with_header_defiant": "Corridor Arch with Header (Defiant)",
-
-	"block.trekfiles.captains_chair_tos": "Captian's Chair (Constitution)",
-	"block.trekfiles.captains_chair_defiant": "Captian's Chair (Defiant)",
-	"block.trekfiles.captains_chair_platform_defiant": "Captian's Chair Platform (Defiant)",
-	"block.trekfiles.chair_defiant_console": "Console Chair (Defiant)",
-	"block.trekfiles.chair_defiant_mess": "Mess & Quarters Chair (Defiant)",
-	"block.trekfiles.chair_stool": "Stool (Defiant)",
-	"block.trekfiles.defiant_helm": "Helm (Defiant)",
-
-	"block.trekfiles.door_sensor": "Door Sensor (Invisible)",
-
-	"block.trekfiles.safety_rail_red": "Red Safety Rail",
-	"block.trekfiles.safety_rail_white": "White Safety Rail",
-
-	"block.trekfiles.partition_beige": "Biege Partition",
-	"block.trekfiles.partition_black": "Black Partition",
-	"block.trekfiles.partition_blue": "Blue Partition (Force Field)",
-	"block.trekfiles.partition_white": "White Partition",
-
-	"block.trekfiles.access_ladder": "Access Ladder",
-
-	"block.trekfiles.table": "Table",
-	"block.trekfiles.mess_hall_table": "Mess Hall Table (Defiant)",
-
-	"block.trekfiles.transporter_pad": "Transporter Pad",
-	"block.trekfiles.transporter_wall_2360s": "Transporter Wall (2360s)",
+	"block.trekfiles.lcars_panel_nine": "LCARS Panel",
 
 	"block.trekfiles.wall_panel_full_upper": "Wall Panel Full Upper (Defiant)",
 	"block.trekfiles.wall_panel_full_lower": "Wall Panel Full Lower (Defiant)",
@@ -79,12 +45,66 @@
 	"block.trekfiles.wall_panel_corner_upper": "Wall Panel Corner Upper (Defiant)",
 	"block.trekfiles.wall_panel_corner_lower": "Wall Panel Corner Lower (Defiant)",
 
+	"block.trekfiles.door_defiant_single": "Door (Defiant)",
+	"block.trekfiles.door_defiant_single_diagonal": "Door (Defiant - Diagonal)",
+	"block.trekfiles.door_defiant_double": "Wide Door (Defiant)",
+	"block.trekfiles.door_defiant_cargo_wide": "Cargo Door (Defiant)",
+	"block.trekfiles.door_galaxy_single_brown": "Door (Galaxy - Brown)",
+	"block.trekfiles.door_galaxy_double_brown": "Wide Door (Galaxy - Brown)",
+	"block.trekfiles.door_galaxy_ten_forward": "Door (Galaxy - Ten Forward)",
+
+	"block.trekfiles.door_sensor": "Door Sensor (Invisible)",
+
+	"block.trekfiles.msd_nx_74205": "MSD (USS Defiant)",
+	"block.trekfiles.msd_vertical_half_wall_nx_74205": "MSD (USS Defiant - for vertical half wall)",
+
+	"block.trekfiles.hatch": "Hatch",
+	"block.trekfiles.hatch_door": "Hatch Horizontal (Split)",
+	"block.trekfiles.hatch_door_vertical": "Hatch Vertical (Split)",
+	"block.trekfiles.hatch_airlock": "Airlock Hatch",
+	"block.trekfiles.hatch_grate": "Floor Grate Hatch",
+	"block.trekfiles.hatch_trim": "Trim Hatch",
+
+	"block.trekfiles.table": "Table",
+	"block.trekfiles.mess_hall_table": "Mess Hall Table (Defiant)",
+
+	"block.trekfiles.safety_rail_red": "Red Safety Rail",
+	"block.trekfiles.safety_rail_white": "White Safety Rail",
+
+	"block.trekfiles.partition_beige": "Biege Partition",
+	"block.trekfiles.partition_black": "Black Partition",
+	"block.trekfiles.partition_blue": "Blue Partition (Force Field)",
+	"block.trekfiles.partition_white": "White Partition",
+
+	"block.trekfiles.captains_chair_tos": "Captian's Chair (Constitution)",
+	"block.trekfiles.captains_chair_defiant": "Captian's Chair (Defiant)",
+	"block.trekfiles.captains_chair_platform_defiant": "Captian's Chair Platform (Defiant)",
+	"block.trekfiles.chair_defiant_console": "Console Chair (Defiant)",
+	"block.trekfiles.chair_defiant_mess": "Mess & Quarters Chair (Defiant)",
+	"block.trekfiles.chair_stool": "Stool (Defiant)",
+	"block.trekfiles.defiant_helm": "Helm (Defiant)",
+
+	"block.trekfiles.torpedo_photon": "Photon Torpedo Mark XXV",
+
 	"block.trekfiles.shuttlecraft_type_18": "Shuttlecraft - Type 18",
 	"block.trekfiles.escape_pod": "Escape Pod",
 
+	"block.trekfiles.access_ladder": "Access Ladder",
+
+	"block.trekfiles.viewscreen_defiant": "Viewscreen - Defiant",
+
+	"block.trekfiles.arch_defiant": "Corridor Arch (Defiant)",
+	"block.trekfiles.arch_header_defiant": "Corridor Arch Header (Defiant)",
+	"block.trekfiles.arch_with_header_defiant": "Corridor Arch with Header (Defiant)",
+
 	"block.trekfiles.replicator_one": "Replicator",
 	"block.trekfiles.replicator_two": "Replicator (Defiant)",
+	"block.trekfiles.replicator_three": "Replicator",
 	"block.trekfiles.replicator_tray_holder": "Replicator Tray Holder",
+
+	"block.trekfiles.container_red": "Red Container (Damage Control)",
+	"block.trekfiles.container_blue": "Red Container (Emergency Supply)",
+	"block.trekfiles.container_yellow": "Red Container",
 
 	"block.trekfiles.floor_defiant_path_side": "Defiant Floor (Path Side)",
 	"block.trekfiles.floor_defiant_path_side_left_135": "Defiant Floor (Path Side Left 135)",
@@ -137,6 +157,8 @@
 	"block.trekfiles.transducer_yellow": "Yellow Transducer",
 
 	"block.trekfiles.conductor": "Conductor",
+
+	"block.trekfiles.bunk_double_defiant": "Double Bunk (Defiant)",
 
 	"block.trekfiles.conduit_large_up_blue": "Large Blue Conduit (Up)",
 	"block.trekfiles.conduit_large_up_red": "Large Red Conduit (Up)",

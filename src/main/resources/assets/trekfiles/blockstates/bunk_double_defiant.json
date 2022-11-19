@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,hinge=left": { "model":  "trekfiles:block/bunk_double_upper_defiant"},
+        "facing=south,hinge=left": { "model":  "trekfiles:block/bunk_double_upper_defiant", "y": 180},
+        "facing=east,hinge=left": { "model":  "trekfiles:block/bunk_double_upper_defiant", "y": 90},
+        "facing=west,hinge=left": { "model":  "trekfiles:block/bunk_double_upper_defiant", "y": 270},
+        "facing=north,hinge=right": { "model":  "trekfiles:block/bunk_double_lower_defiant"},
+        "facing=south,hinge=right": { "model":  "trekfiles:block/bunk_double_lower_defiant", "y": 180},
+        "facing=east,hinge=right": { "model":  "trekfiles:block/bunk_double_lower_defiant", "y": 90},
+        "facing=west,hinge=right": { "model":  "trekfiles:block/bunk_double_lower_defiant", "y": 270}
+    }
+}

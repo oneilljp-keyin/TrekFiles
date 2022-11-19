@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/console/defiant/crew_quarter_top"},
+        "facing=south": { "model":  "trekfiles:block/console/defiant/crew_quarter_top", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/console/defiant/crew_quarter_top", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/console/defiant/crew_quarter_top", "y": 270}
+    }
+}

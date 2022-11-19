@@ -1,5 +1,5 @@
 {
-  "parent": "trekfiles:block/door/hatch_wide_top_left",
+  "parent": "trekfiles:block/door/cargo_wide_top_left",
   "textures": {
     "bottom": "trekfiles:block/door_defiant_cargo_lower_lh",
     "top": "trekfiles:block/door_defiant_cargo_upper_lh"

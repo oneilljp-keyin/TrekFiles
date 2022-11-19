@@ -11,17 +11,15 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.TrekFiles;
 
-import javax.annotation.Nullable;
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Stream;
 
 public class ArchHeader extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -37,7 +35,7 @@ public class ArchHeader extends HorizontalDirectionalBlock {
         this.registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH).setValue(HINGE, DoorHingeSide.LEFT).setValue(HALF, DoubleBlockHalf.LOWER));
     }
 
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
             if (state.getValue(HINGE) == DoorHingeSide.LEFT) {
                 runCalculation(SHAPE_LEFT.orElse(Shapes.block()));
             } else {
@@ -50,7 +48,6 @@ public class ArchHeader extends HorizontalDirectionalBlock {
         BlockPos blockpos = placeContext.getClickedPos();
         Level level = placeContext.getLevel();
         if (blockpos.getY() < level.getMaxBuildHeight() - 1 && level.getBlockState(blockpos.above()).canBeReplaced(placeContext)) {
-            boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
             return this.defaultBlockState().setValue(FACING, placeContext.getHorizontalDirection())
                     .setValue(HINGE, this.getHinge(placeContext))
                     .setValue(HALF, DoubleBlockHalf.LOWER);
@@ -99,7 +96,7 @@ public class ArchHeader extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING, HINGE, HALF);
     }
