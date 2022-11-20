@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "trekfiles:block/tng_block",
+	"parent": "trekfiles:block/vertical_slab",
 	"textures": {
 		"side": "#side",
 		"end": "#end",

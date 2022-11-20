@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "trekfiles:block/tng_block",
+	"parent": "trekfiles:block/vertical_slab",
 	"elements": [
 		{
 			"from": [0, 0, 8],
