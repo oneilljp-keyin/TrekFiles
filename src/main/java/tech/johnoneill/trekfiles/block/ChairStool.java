@@ -13,6 +13,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.TrekFiles;
 
 import java.util.EnumMap;
@@ -24,25 +25,15 @@ public class ChairStool extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
     private static final Optional<VoxelShape> SHAPE = Stream.of(
-            Block.box(6.5, 0, 6.5, 9.5, 1, 9.5),
-            Block.box(11.5, 0, 4, 12, 0.5, 12),
-            Block.box(4, 0, 4, 4.5, 0.5, 12),
-            Block.box(4.5, 0, 11.5, 11.5, 0.5, 12),
             Block.box(4.5, 0, 4, 11.5, 0.5, 4.5),
-            Block.box(4.5, 0, 7.9, 6.5, 0.25, 8.15),
-            Block.box(7.85, 0, 4.5, 8.1, 0.25, 6.5),
-            Block.box(7.85, 0, 9.5, 8.1, 0.25, 11.5),
-            Block.box(9.5, 0, 7.9, 11.5, 0.25, 8.15),
-            Block.box(7, 1, 7, 9, 7, 9),
-            Block.box(7.5, 7, 7.5, 8.5, 10, 8.5),
-            Block.box(4.5, 10, 4.5, 11.5, 10.5, 5),
-            Block.box(4.5, 10.5, 6, 11.5, 11, 11.5),
-            Block.box(11, 10.5, 5, 11.5, 11.5, 6),
-            Block.box(4.5, 10.5, 5, 5, 11.5, 6),
-            Block.box(4.5, 10.5, 4.5, 11.5, 12, 5),
-            Block.box(4.5, 10, 5, 5, 10.5, 6),
-            Block.box(11, 10, 5, 11.5, 10.5, 6),
-            Block.box(4.5, 10, 6, 11.5, 10.5, 11.5)
+            Block.box(4, 0, 4, 4.5, 0.5, 12),
+            Block.box(6, 0, -0.1, 16.5, 0.25, 0.15),
+            Block.box(11.2, 0, -5.25, 11.45, 0.25, 5.25),
+            Block.box(6.5, 0, 6.5, 9.5, 0.5, 9.5),
+            Block.box(4.5, 0, 7.9, 11.5, 0.25, 8.15),
+            Block.box(7.85, 0, 4.5, 8.1, 0.25, 11.5),
+            Block.box(4.5, 0, 11.5, 11.5, 0.5, 12),
+            Block.box(11.5, 0, 4, 12, 0.5, 12)
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR));
 
     public ChairStool(Properties properties) {
@@ -52,7 +43,7 @@ public class ChairStool extends HorizontalDirectionalBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
         return SHAPES.get(state.getValue(FACING));
     }
 
@@ -62,7 +53,7 @@ public class ChairStool extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING);
     }

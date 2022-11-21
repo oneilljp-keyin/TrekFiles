@@ -97,6 +97,11 @@ public class BlockInit {
 			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
+	public static final RegistryObject<LCARSDisplay> DEDICATION_PLAQUE_74205 = register("dedication_plaque_74205",
+			() -> new LCARSDisplay(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)
+					.lightLevel((p_50872_) -> 0)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
 	public static final RegistryObject<LCARSDisplay> LCARS_PANEL_NINE = register("lcars_panel_nine",
 			() -> new LCARSDisplay(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)
 					.lightLevel((p_50872_) -> 5)),
@@ -131,6 +136,12 @@ public class BlockInit {
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<VerticalPost> WALL_PANEL_VERTICAL_POST_UPPER = register("wall_panel_vertical_post_upper",
 			() -> new VerticalPost(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<Block> WALL_PANEL_FULL = register("wall_panel_full",
+			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<SlabBlock> WALL_PANEL_FULL_SLAB = register("wall_panel_slab",
+			() -> new SlabBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	public static final RegistryObject<DoorHatchSingle> DOOR_DEFIANT_SINGLE = register("door_defiant_single",
@@ -275,6 +286,9 @@ public class BlockInit {
     public static final RegistryObject<VerticalSlab> REPLICATOR_DEFIANT = register("replicator_defiant",
             () -> new VerticalSlab(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<VerticalSlab> REPLICATOR_DEFIANT_BRIDGE = register("replicator_defiant_bridge_corner",
+			() -> new VerticalSlab(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<FoodTrayHolder> REPLICATOR_TRAY_HOLDER = register("replicator_tray_holder",
 			() -> new FoodTrayHolder(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
@@ -317,6 +331,12 @@ public class BlockInit {
 			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_CENTER_RIGHT_INTERSECT = register("floor_defiant_path_center_right_intersect",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_CENTER_LEFT_135 = register("floor_defiant_path_center_left_135",
+			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_CENTER_RIGHT_135 = register("floor_defiant_path_center_right_135",
 			() -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<CarvedPumpkinBlock> FLOOR_DEFIANT_PATH_CORNER = register("floor_defiant_path_corner",
@@ -496,6 +516,10 @@ public class BlockInit {
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 	public static final RegistryObject<FenceBlock> CONDUIT_SMALL_DOWN_YELLOW = register("conduit_small_down_yellow",
 			() -> new ConduitSmall(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+
+	public static final RegistryObject<FoldedSeat> FOLDED_SEAT = register("folded_seat",
+			() -> new FoldedSeat(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,

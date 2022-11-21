@@ -120,7 +120,7 @@
 		},
 		{
 			"name": "Cube",
-			"from": [1.9, 10.8, 4.5],
+			"from": [1.9, 11.2, 4.5],
 			"to": [14.1, 14, 7.9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 2, 0]},
 			"faces": {
@@ -441,7 +441,7 @@
 				"south": {"uv": [10, 0, 16, 16], "rotation": 180, "texture": "#5"},
 				"west": {"uv": [14, 0, 16, 16], "rotation": 180, "texture": "#5"},
 				"up": {"uv": [10, 0, 16, 16], "rotation": 180, "texture": "#5"},
-				"down": {"uv": [10, 16, 16, 0], "rotation": 180, "texture": "#5"}
+				"down": {"uv": [11, 16, 16, 0], "rotation": 180, "texture": "#5"}
 			}
 		},
 		{

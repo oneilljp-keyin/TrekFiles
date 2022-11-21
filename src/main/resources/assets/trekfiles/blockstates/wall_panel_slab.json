@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "trekfiles:block/wall_panel_slab"
+		},
+		"type=double": {
+			"model": "trekfiles:block/wall_panel_full"
+		},
+		"type=top": {
+			"model": "trekfiles:block/wall_panel_slab_top"
+		}
+	}
+}

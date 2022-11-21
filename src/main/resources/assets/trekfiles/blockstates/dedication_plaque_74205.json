@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "trekfiles:block/dedication_plaque_74205",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "trekfiles:block/dedication_plaque_74205"
+    },
+    "facing=south": {
+      "model": "trekfiles:block/dedication_plaque_74205",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trekfiles:block/dedication_plaque_74205",
+      "y": 270
+    }
+  }
+}

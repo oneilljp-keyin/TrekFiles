@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_column",
+	"textures": {
+		"side": "trekfiles:block/wall_panel_full_upper",
+		"end": "trekfiles:block/wall_panel_full"
+	}
+}

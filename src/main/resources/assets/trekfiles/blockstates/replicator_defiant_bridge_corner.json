@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/replicator_defiant_bridge_corner"},
+        "facing=south": { "model":  "trekfiles:block/replicator_defiant_bridge_corner", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/replicator_defiant_bridge_corner", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/replicator_defiant_bridge_corner", "y": 270}
+    }
+}

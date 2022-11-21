@@ -44,6 +44,7 @@
 	"block.trekfiles.wall_panel_vertical_post_lower": "Wall Panel Post Lower (Defiant)",
 	"block.trekfiles.wall_panel_corner_upper": "Wall Panel Corner Upper (Defiant)",
 	"block.trekfiles.wall_panel_corner_lower": "Wall Panel Corner Lower (Defiant)",
+	"block.trekfiles.wall_panel_full": "Wall Panel",
 
 	"block.trekfiles.door_defiant_single": "Door (Defiant)",
 	"block.trekfiles.door_defiant_single_diagonal": "Door (Defiant - Diagonal)",
@@ -98,7 +99,8 @@
 	"block.trekfiles.arch_with_header_defiant": "Corridor Arch with Header (Defiant)",
 
 	"block.trekfiles.replicator_one": "Replicator",
-	"block.trekfiles.replicator_two": "Replicator (Defiant)",
+	"block.trekfiles.replicator_defiant": "Replicator (Defiant)",
+	"block.trekfiles.replicator_defiant_bridge_corner": "Replicator (Defiant Bridge)",
 	"block.trekfiles.replicator_three": "Replicator",
 	"block.trekfiles.replicator_tray_holder": "Replicator Tray Holder",
 
@@ -121,10 +123,11 @@
 	"block.trekfiles.floor_defiant_path_center": "Defiant Floor (Path Center)",
 	"block.trekfiles.floor_defiant_path_center_left_intersect": "Defiant Floor (Path Center Left Intersect)",
 	"block.trekfiles.floor_defiant_path_center_right_intersect": "Defiant Floor (Path Center Right Intersect)",
+	"block.trekfiles.floor_defiant_path_center_left_135": "Defiant Floor (Path Center Left 135)",
+	"block.trekfiles.floor_defiant_path_center_right_135": "Defiant Floor (Path Center Right 135)",
 	"block.trekfiles.floor_defiant_path_cross": "Defiant Floor (Path Cross)",
 	"block.trekfiles.floor_defiant_path_t_intersect": "Defiant Floor (Path T-Intersect)",
 	"block.trekfiles.floor_defiant_path_t_intersect_high": "Defiant Floor (Path T-Intersection High)",
-	"block.trekfiles.floor_defiant_no_path": "Defiant Floor (No Path)",
 
 	"block.trekfiles.floor_defiant_path_side_slab": "Defiant Floor Slab (Path Side)",
 	"block.trekfiles.floor_defiant_path_side_left_135_slab": "Defiant Floor Slab (Path Side Left 135)",
@@ -145,6 +148,7 @@
 	"block.trekfiles.floor_defiant_path_t_intersect_slab": "Defiant Floor Slab (Path T-Intersect)",
 	"block.trekfiles.floor_defiant_path_t_intersect_high_slab": "Defiant Floor Slab (Path T-Intersection High)",
 	"block.trekfiles.floor_defiant_no_path_slab": "Defiant Floor Slab (No Path)",
+	"block.trekfiles.floor_defiant_slab": "Defiant Half Slab",
 
 	"block.trekfiles.transducer_blue_up": "Blue Transducer (Up)",
 	"block.trekfiles.transducer_blue_down": "Blue Transducer (Down)",
@@ -178,6 +182,8 @@
 	"block.trekfiles.conduit_small_down_blue": "Small Blue Conduit (Down)",
 	"block.trekfiles.conduit_small_down_red": "Small Red Conduit (Down)",
 	"block.trekfiles.conduit_small_down_yellow": "Small Yellow Conduit (Down)",
+
+	"block.trekfiles.folded_seat": "Folding Seat",
 
 	"sounds.trekfiles.default_door_open": "Default Door Open",
 	"sounds.trekfiles.default_door_close": "Default Door Close"

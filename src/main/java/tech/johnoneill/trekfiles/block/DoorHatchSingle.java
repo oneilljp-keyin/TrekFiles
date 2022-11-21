@@ -67,23 +67,18 @@ public class DoorHatchSingle extends Block {
                 .setValue(HINGE, DoorHingeSide.LEFT).setValue(POWERED, Boolean.FALSE).setValue(HALF, DoubleBlockHalf.LOWER));
     }
 
-    public VoxelShape getShape(BlockState blockState, @NotNull BlockGetter blockGetter, @NotNull BlockPos blockPos, @NotNull CollisionContext context) {
+    public @NotNull VoxelShape getShape(BlockState blockState, @NotNull BlockGetter blockGetter, @NotNull BlockPos blockPos, @NotNull CollisionContext context) {
         Direction direction = blockState.getValue(FACING);
         boolean flag = !blockState.getValue(OPEN);
-        switch (direction) {
-            case EAST:
-            default:
-                return flag ? EAST_CLOSED : EAST_OPEN;
-            case SOUTH:
-                return flag ? SOUTH_CLOSED : SOUTH_OPEN;
-            case WEST:
-                return flag ? WEST_CLOSED : WEST_OPEN;
-            case NORTH:
-                return flag ? NORTH_CLOSED : NORTH_OPEN;
-        }
+        return switch (direction) {
+            default -> flag ? EAST_CLOSED : EAST_OPEN;
+            case SOUTH -> flag ? SOUTH_CLOSED : SOUTH_OPEN;
+            case WEST -> flag ? WEST_CLOSED : WEST_OPEN;
+            case NORTH -> flag ? NORTH_CLOSED : NORTH_OPEN;
+        };
     }
 
-    public BlockState updateShape(BlockState state, Direction direction, @NotNull BlockState state1, @NotNull LevelAccessor accessor, @NotNull BlockPos pos, @NotNull BlockPos pos1) {
+    public @NotNull BlockState updateShape(BlockState state, Direction direction, @NotNull BlockState state1, @NotNull LevelAccessor accessor, @NotNull BlockPos pos, @NotNull BlockPos pos1) {
         DoubleBlockHalf doubleblockhalf = state.getValue(HALF);
         if (direction.getAxis() == Direction.Axis.Y && doubleblockhalf == DoubleBlockHalf.LOWER == (direction == Direction.UP)) {
             return state1.is(this) && state1.getValue(HALF) != doubleblockhalf ? state.setValue(FACING, state1.getValue(FACING))
@@ -161,7 +156,7 @@ public class DoorHatchSingle extends Block {
         }
     }
 
-    public InteractionResult use(@NotNull BlockState blockState, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
+    public @NotNull InteractionResult use(@NotNull BlockState blockState, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
         if (this.material == Material.METAL) {
             return InteractionResult.PASS;
         } else {
@@ -180,7 +175,7 @@ public class DoorHatchSingle extends Block {
     public void setOpen(@Nullable Entity entity, Level level, BlockState state, BlockPos pos, boolean b) {
         if (state.is(this) && state.getValue(OPEN) != b) {
             level.setBlock(pos, state.setValue(OPEN, b), 10);
-            level.playSound((Player)null, pos, ModSounds.DEFAULT_DOOR_OPEN.get(), SoundSource.BLOCKS, 1f, 1f);
+            level.playSound(null, pos, ModSounds.DEFAULT_DOOR_OPEN.get(), SoundSource.BLOCKS, 1f, 1f);
 //            this.playSound(level, pos, b);
             level.gameEvent(entity, b ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
         }
@@ -191,7 +186,7 @@ public class DoorHatchSingle extends Block {
         if (!this.defaultBlockState().is(block) && flag != state.getValue(POWERED)) {
             if (flag != state.getValue(OPEN)) {
                 this.playSound(level, pos, flag);
-                level.gameEvent((Entity)null, flag ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
+                level.gameEvent(null, flag ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
             }
 
             level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), 2);
@@ -206,18 +201,18 @@ public class DoorHatchSingle extends Block {
     }
 
     private void playSound(Level level, BlockPos pos, boolean b) {
-        level.levelEvent((Player)null, b ? this.getOpenSound() : this.getCloseSound(), pos, 0);
+        level.levelEvent(null, b ? this.getOpenSound() : this.getCloseSound(), pos, 0);
     }
 
-    public PushReaction getPistonPushReaction(@NotNull BlockState state) {
+    public @NotNull PushReaction getPistonPushReaction(@NotNull BlockState state) {
         return PushReaction.DESTROY;
     }
 
-    public BlockState rotate(BlockState state, Rotation rotation) {
+    public @NotNull BlockState rotate(BlockState state, Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
     }
 
-    public BlockState mirror(@NotNull BlockState state, @NotNull Mirror mirror) {
+    public @NotNull BlockState mirror(@NotNull BlockState state, @NotNull Mirror mirror) {
         return mirror == Mirror.NONE ? state : state.rotate(mirror.getRotation(state.getValue(FACING))).cycle(HINGE);
     }
 

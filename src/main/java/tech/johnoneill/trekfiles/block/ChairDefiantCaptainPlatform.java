@@ -13,6 +13,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.TrekFiles;
 
 import java.util.EnumMap;
@@ -24,22 +25,6 @@ public class ChairDefiantCaptainPlatform extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
     private static final Optional<VoxelShape> SHAPE = Stream.of(
-            Block.box(5, 24.1, 4.6, 11, 26.6, 6.6),
-            Block.box(2, 12.1, 4.6, 14, 19.1, 7.1),
-            Block.box(3, 19.1, 4.6, 13, 21.6, 7.1),
-            Block.box(4, 21.6, 4.6, 12, 24.1, 7.1),
-            Block.box(2, 10.6, 4.6, 14, 12.6, 15.6),
-            Block.box(14.5, 14.1, 7, 16.5, 16.1, 14.1),
-            Block.box(-0.5, 14.1, 7, 1.5, 16.1, 14.1),
-            Block.box(3, 10.6, 15.6, 13, 12.6, 16.6),
-            Block.box(1.9, 10.8, 4.5, 14.1, 14, 7.9),
-            Block.box(1, 17.4, 3.5, 3, 17.9, 3.75),
-            Block.box(0.5, 16.1, 3.6, 15.5, 18.1, 7),
-            Block.box(-0.5, 12.1, 2.6, 16.5, 16.1, 7),
-            Block.box(-0.5, 11.1, 3.6, 16.5, 12.1, 15.1),
-            Block.box(5, 8, 7, 11, 10.5, 13),
-            Block.box(5.25, 7, 7.25, 10.75, 8, 12.75),
-            Block.box(5, 5, 7, 11, 7, 13),
             Block.box(4, 4, 6, 12, 5, 14),
             Block.box(-6, 3, 16, 0, 4, 32),
             Block.box(22.5, 5, 11, 24.5, 16, 13),
@@ -74,7 +59,7 @@ public class ChairDefiantCaptainPlatform extends HorizontalDirectionalBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
         return SHAPES.get(state.getValue(FACING));
     }
 
@@ -84,7 +69,7 @@ public class ChairDefiantCaptainPlatform extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING);
     }
