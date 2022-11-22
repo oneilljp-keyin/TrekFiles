@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/table/bridge_island"},
+        "facing=south": { "model":  "trekfiles:block/table/bridge_island", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/table/bridge_island", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/table/bridge_island", "y": 270}
+    }
+}

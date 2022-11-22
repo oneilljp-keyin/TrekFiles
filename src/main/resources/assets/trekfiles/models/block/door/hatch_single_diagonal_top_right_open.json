@@ -4,6 +4,7 @@
 	"textures": {
 		"1": "trekfiles:block/hatch_door",
 		"2": "trekfiles:block/white",
+		"control": "trekfiles:block/lcars_controls_general_small",
 		"particle": "#top",
 		"top": "#top",
 		"upper": "#upper"
@@ -15,8 +16,32 @@
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 14, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 0, 16], "texture": "#top"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#top"},
+				"east": {"uv": [0, 3.75, 1.75, 16], "texture": "#top"},
 				"south": {"uv": [0, 0, 2, 16], "texture": "#top"}
+			}
+		},
+		{
+			"from": [4.25, 0, -3],
+			"to": [4.375, 1, -1.75],
+			"rotation": {"angle": -45, "axis": "y", "origin": [2.9375, 0.5, 9.625]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 0.5], "texture": "#control"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#control"},
+				"south": {"uv": [0, 4.75, 8, 4.875], "texture": "#control"},
+				"west": {"uv": [0, 0, 8, 5.25], "texture": "#control"},
+				"up": {"uv": [0, 0, 8, 0.125], "rotation": 270, "texture": "#control"}
+			}
+		},
+		{
+			"from": [6.375, 0, -3],
+			"to": [6.5, 1, -1.75],
+			"rotation": {"angle": -45, "axis": "y", "origin": [2.9375, 0.5, 9.625]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 0.5], "texture": "#control"},
+				"east": {"uv": [0, 0, 8, 5.25], "texture": "#control"},
+				"south": {"uv": [0, 4.75, 8, 4.875], "texture": "#control"},
+				"west": {"uv": [0, 0, 8, 5.25], "texture": "#control"},
+				"up": {"uv": [0, 0, 8, 0.125], "rotation": 270, "texture": "#control"}
 			}
 		},
 		{
@@ -90,7 +115,7 @@
 			"faces": {
 				"north": {"uv": [16, 0, 14, 16], "texture": "#top"},
 				"south": {"uv": [14, 0, 16, 16], "texture": "#top"},
-				"west": {"uv": [16, 0, 14, 16], "texture": "#top"}
+				"west": {"uv": [16, 3.625, 14.25, 13.375], "texture": "#top"}
 			}
 		},
 		{
@@ -100,7 +125,7 @@
 			"faces": {
 				"north": {"uv": [14, 0, 2, 2], "texture": "#top"},
 				"south": {"uv": [2, 0, 14, 2], "texture": "#top"},
-				"down": {"uv": [0, 0, 12, 2], "texture": "#top"}
+				"down": {"uv": [3.625, 0, 10.5, 1.75], "texture": "#top"}
 			}
 		},
 		{

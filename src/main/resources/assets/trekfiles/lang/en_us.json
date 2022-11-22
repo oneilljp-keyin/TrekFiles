@@ -33,6 +33,8 @@
 	"block.trekfiles.lcars_block_medical": "LCARS Block (Medical)",
 
 	"block.trekfiles.lcars_panel_nine": "LCARS Panel",
+	"block.trekfiles.lcars_bridge_front_left": "Forward Brigde LCARS (Left Side)",
+	"block.trekfiles.lcars_bridge_front_right": "Forward Brigde LCARS (Right Side)",
 
 	"block.trekfiles.wall_panel_full_upper": "Wall Panel Full Upper (Defiant)",
 	"block.trekfiles.wall_panel_full_lower": "Wall Panel Full Lower (Defiant)",
@@ -184,6 +186,8 @@
 	"block.trekfiles.conduit_small_down_yellow": "Small Yellow Conduit (Down)",
 
 	"block.trekfiles.folded_seat": "Folding Seat",
+	"block.trekfiles.foot_stool": "Foot Stool",
+	"block.trekfiles.container_phaser_storage": "Container for Phasers",
 
 	"sounds.trekfiles.default_door_open": "Default Door Open",
 	"sounds.trekfiles.default_door_close": "Default Door Close"

@@ -2,6 +2,6 @@
 	"credit": "Made with Blockbench",
 	"parent": "trekfiles:block/lcars_panel",
 	"textures": {
-		"panel": "trekfiles:block/lcars_9"
+		"panel": "trekfiles:block/lcars_12"
 	}
 }

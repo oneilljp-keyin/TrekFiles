@@ -1,0 +1,7 @@
+{
+	"parent": "trekfiles:block/lcars_display_with_controls",
+	"textures": {
+		"upper": "trekfiles:block/lcars_defiant_front_bridge_right",
+		"lower": "trekfiles:block/lcars_controls_general_large"
+	}
+}

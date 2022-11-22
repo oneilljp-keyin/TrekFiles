@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "trekfiles:block/lcars_bridge_front_right",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "trekfiles:block/lcars_bridge_front_right"
+    },
+    "facing=south": {
+      "model": "trekfiles:block/lcars_bridge_front_right",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "trekfiles:block/lcars_bridge_front_right",
+      "y": 270
+    }
+  }
+}

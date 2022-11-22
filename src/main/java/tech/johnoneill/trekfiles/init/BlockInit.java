@@ -106,6 +106,14 @@ public class BlockInit {
 			() -> new LCARSDisplay(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)
 					.lightLevel((p_50872_) -> 5)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+    public static final RegistryObject<LCARSDisplay> LCARS_BRIDGE_FRONT_LEFT = register("lcars_bridge_front_left",
+            () -> new LCARSDisplay(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)
+                    .lightLevel((p_50872_) -> 5)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+    public static final RegistryObject<LCARSDisplay> LCARS_BRIDGE_FRONT_RIGHT = register("lcars_bridge_front_right",
+            () -> new LCARSDisplay(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)
+                    .lightLevel((p_50872_) -> 5)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	public static final RegistryObject<Block> WALL_PANEL_FULL_UPPER = register("wall_panel_full_upper",
 			() -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
@@ -520,6 +528,15 @@ public class BlockInit {
 
 	public static final RegistryObject<FoldedSeat> FOLDED_SEAT = register("folded_seat",
 			() -> new FoldedSeat(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<FootStool> FOOT_STOOL = register("foot_stool",
+			() -> new FootStool(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<PhaserStorage> CONTAINER_PHASER_STORAGE = register("container_phaser_storage",
+			() -> new PhaserStorage(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
+	public static final RegistryObject<IslandInterface> BRIDGE_ISLAND = register("bridge_island",
+			() -> new IslandInterface(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.METAL)),
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TrekFiles.TREKFILES_TAB)));
 
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,

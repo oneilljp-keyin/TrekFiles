@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,open=false": { "model":  "trekfiles:block/container_phaser_storage"},
+        "facing=north,open=true": { "model":  "trekfiles:block/container_phaser_storage_open"},
+        "facing=south,open=false": { "model":  "trekfiles:block/container_phaser_storage", "y": 180},
+        "facing=south,open=true": { "model":  "trekfiles:block/container_phaser_storage_open", "y": 180},
+        "facing=east,open=false": { "model":  "trekfiles:block/container_phaser_storage", "y": 90},
+        "facing=east,open=true": { "model":  "trekfiles:block/container_phaser_storage_open", "y": 90},
+        "facing=west,open=false": { "model":  "trekfiles:block/container_phaser_storage", "y": 270},
+        "facing=west,open=true": { "model":  "trekfiles:block/container_phaser_storage_open", "y": 270}
+    }
+}

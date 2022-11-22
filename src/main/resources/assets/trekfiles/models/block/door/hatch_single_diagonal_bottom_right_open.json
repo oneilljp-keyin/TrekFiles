@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
+		"control": "trekfiles:block/lcars_controls_general_small",
 		"particle": "#bottom",
 		"bottom": "#bottom",
 		"lower": "#lower"
@@ -13,7 +14,7 @@
 			"rotation": {"angle": 45, "axis": "y", "origin": [8, 4.5, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 0, 16], "texture": "#bottom"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#bottom"},
+				"east": {"uv": [0, 0, 1.5, 12], "texture": "#bottom"},
 				"south": {"uv": [0, 0, 2, 16], "texture": "#bottom"},
 				"down": {"uv": [0, 16, 2, 14], "rotation": 90, "texture": "#bottom"}
 			}
@@ -25,7 +26,7 @@
 			"faces": {
 				"north": {"uv": [16, 0, 14, 16], "texture": "#bottom"},
 				"south": {"uv": [14, 0, 16, 16], "texture": "#bottom"},
-				"west": {"uv": [16, 0, 14, 16], "texture": "#bottom"},
+				"west": {"uv": [16, 3, 14.25, 12.125], "texture": "#bottom"},
 				"down": {"uv": [14, 16, 16, 14], "rotation": 90, "texture": "#bottom"}
 			}
 		},
@@ -58,6 +59,29 @@
 				"north": {"uv": [0, 0, 2.31, 16], "texture": "#lower"},
 				"south": {"uv": [11, 0, 13.31, 16], "texture": "#lower"},
 				"down": {"uv": [1, 12, 3, 14], "rotation": 90, "texture": "#lower"}
+			}
+		},
+		{
+			"from": [4.25, 14, -3],
+			"to": [4.375, 16, -1.75],
+			"rotation": {"angle": -45, "axis": "y", "origin": [2.9375, 15, 9.625]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
+				"south": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
+				"west": {"uv": [0, 5.25, 8, 16], "texture": "#control"},
+				"down": {"uv": [0, 0, 8, 0.25], "rotation": 90, "texture": "#control"}
+			}
+		},
+		{
+			"from": [6.375, 14, -3],
+			"to": [6.625, 16, -1.75],
+			"rotation": {"angle": -45, "axis": "y", "origin": [2.9375, 15, 9.625]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
+				"east": {"uv": [0, 5.25, 8, 16], "texture": "#control"},
+				"south": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
+				"west": {"uv": [0, 5.25, 8, 16], "texture": "#control"},
+				"down": {"uv": [0, 0, 8, 0.25], "rotation": 90, "texture": "#control"}
 			}
 		},
 		{
