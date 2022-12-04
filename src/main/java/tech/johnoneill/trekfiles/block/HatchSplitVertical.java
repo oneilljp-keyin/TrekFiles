@@ -21,6 +21,7 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.TrekFiles;
 
 import javax.annotation.Nullable;
@@ -67,36 +68,28 @@ public class HatchSplitVertical extends HorizontalDirectionalBlock {
         this.registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.FALSE).setValue(POWERED, Boolean.FALSE));
     }
 
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext ctx) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
         if (!state.getValue(OPEN)) {
-            switch (state.getValue(FACING)) {
-                case NORTH:
-                default:
-                    return NORTH_SHAPE_CLOSED;
-                case SOUTH:
-                    return SOUTH_SHAPE_CLOSED;
-                case WEST:
-                    return WEST_SHAPE_CLOSED;
-                case EAST:
-                    return EAST_SHAPE_CLOSED;
-            }
+            return switch (state.getValue(FACING)) {
+                default -> NORTH_SHAPE_CLOSED;
+                case SOUTH -> SOUTH_SHAPE_CLOSED;
+                case WEST -> WEST_SHAPE_CLOSED;
+                case EAST -> EAST_SHAPE_CLOSED;
+            };
         } else {
             runCalculation(SHAPE_OPEN.orElse(Shapes.block()));
             return SHAPES.get(state.getValue(FACING));
         }
     }
 
-    public boolean isPathfindable(BlockState state, BlockGetter getter, BlockPos pos, PathComputationType type) {
-        switch (type) {
-            case LAND:
-            case AIR:
-                return state.getValue(OPEN);
-            default:
-                return false;
-        }
+    public boolean isPathfindable(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, PathComputationType type) {
+        return switch (type) {
+            case LAND, AIR -> state.getValue(OPEN);
+            default -> false;
+        };
     }
 
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
+    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
         if (this.material == Material.METAL) {
             return InteractionResult.PASS;
         } else {
@@ -119,13 +112,13 @@ public class HatchSplitVertical extends HorizontalDirectionalBlock {
         level.gameEvent(player, b ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
     }
 
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos pos1, boolean b) {
+    public void neighborChanged(@NotNull BlockState state, Level level, @NotNull BlockPos pos, @NotNull Block block, @NotNull BlockPos pos1, boolean b) {
         if (!level.isClientSide) {
             boolean flag = level.hasNeighborSignal(pos);
             if (flag != state.getValue(POWERED)) {
                 if (state.getValue(OPEN) != flag) {
                     state = state.setValue(OPEN, flag);
-                    this.playSound((Player)null, level, pos, flag);
+                    this.playSound(null, level, pos, flag);
                 }
 
                 level.setBlock(pos, state.setValue(POWERED, flag), 2);
@@ -152,7 +145,7 @@ public class HatchSplitVertical extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING, OPEN, POWERED);
     }

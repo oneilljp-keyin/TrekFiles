@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/vertical_slab",
 	"textures": {
 		"1": "trekfiles:block/helm_pedestal"
 	},

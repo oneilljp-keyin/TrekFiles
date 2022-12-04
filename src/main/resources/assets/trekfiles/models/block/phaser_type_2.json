@@ -9,7 +9,7 @@
 			"name": "Element",
 			"from": [6.8025, 8.1225, 7.925],
 			"to": [7.8025, 9.1225, 9.425],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [9.75, 12, 10.75, 13], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [12, 0.5, 16, 4], "texture": "#phaser"},
@@ -64,7 +64,7 @@
 			"name": "Element",
 			"from": [6.8025, 9.1225, 7.675],
 			"to": [8.0025, 11.1225, 9.675],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [7.75, 9, 9.75, 10.2], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [12, 12.5, 16, 7], "texture": "#phaser"},
@@ -78,7 +78,7 @@
 			"name": "Element",
 			"from": [6.9525, 11.1225, 7.925],
 			"to": [7.9525, 12.1225, 9.425],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [4.75, 1, 5.75, 2], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [6, 1.5, 7.5, 2.5], "texture": "#phaser"},
@@ -91,7 +91,7 @@
 			"name": "Element",
 			"from": [7.3025, 12.1225, 8.125],
 			"to": [7.9025, 12.6225, 9.225],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [3.75, 2, 9.5, 0], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [3, 0.5, 10, 2.25], "texture": "#phaser"},
@@ -104,7 +104,7 @@
 			"name": "Element",
 			"from": [8.0025, 9.8225, 8.825],
 			"to": [8.0925, 10.8225, 9.425],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [5.75, 6, 12.5, 4], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [5, 4.5, 12, 6.25], "texture": "#phaser"},
@@ -117,7 +117,7 @@
 			"name": "Element",
 			"from": [8.0025, 9.8225, 7.925],
 			"to": [8.0925, 10.8225, 8.525],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [6.75, 6, 13.5, 4], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [6, 4.5, 13, 6.25], "texture": "#phaser"},
@@ -130,7 +130,7 @@
 			"name": "Element",
 			"from": [7.4025, 12.6225, 8.325],
 			"to": [7.8025, 12.8225, 9.025],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.65, 9.3475, 8.675]},
+			
 			"faces": {
 				"north": {"uv": [0.75, 1, 2.5, 0], "rotation": 270, "texture": "#phaser"},
 				"east": {"uv": [0, 0.5, 2, 0.25], "texture": "#phaser"},

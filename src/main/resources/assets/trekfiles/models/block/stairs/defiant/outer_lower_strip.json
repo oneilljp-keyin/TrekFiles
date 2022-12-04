@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "trekfiles:block/wall_panel_lower",
+    "side": "trekfiles:block/wall_panel_lower",
+    "top": "trekfiles:block/wall_panel_lower"
+  }
+}

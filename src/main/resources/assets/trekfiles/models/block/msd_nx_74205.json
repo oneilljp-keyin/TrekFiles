@@ -42,13 +42,5 @@
 			"translation": [0, 0, -2.5],
 			"scale": [0.4, 0.4, 0.4]
 		}
-	},
-	"groups": [
-		{
-			"name": "VoxelShapes",
-			"origin": [0, 0, 0],
-			"color": 0,
-			"children": [0]
-		}
-	]
+	}
 }

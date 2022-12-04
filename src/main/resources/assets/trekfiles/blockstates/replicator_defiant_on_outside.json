@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":  "trekfiles:block/replicator_defiant_on_outside"},
+        "facing=south": { "model":  "trekfiles:block/replicator_defiant_on_outside", "y": 180},
+        "facing=east": { "model":  "trekfiles:block/replicator_defiant_on_outside", "y": 90},
+        "facing=west": { "model":  "trekfiles:block/replicator_defiant_on_outside", "y": 270}
+    }
+}

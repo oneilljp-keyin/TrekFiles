@@ -5,9 +5,7 @@
 		"casing": "trekfiles:block/hatch_door",
 		"light": "trekfiles:block/white",
 		"control": "trekfiles:block/lcars_controls_general_small",
-		"particle": "#top",
-		"top": "#top",
-		"upper": "#upper"
+		"particle": "#top"
 	},
 	"elements": [
 		{
@@ -147,20 +145,10 @@
 		},
 		{
 			"from": [14.5, 0, 6.875],
-			"to": [15.75, 1, 7],
-			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
-			"faces": {
-				"north": {"uv": [0, 0, 8, 5.25], "texture": "#control"},
-				"east": {"uv": [0, 0, 8, 0.5], "texture": "#control"},
-				"west": {"uv": [0, 4.75, 8, 4.875], "texture": "#control"},
-				"up": {"uv": [0, 0, 8, 0.125], "texture": "#control"}
-			}
-		},
-		{
-			"from": [14.5, 0, 9],
 			"to": [15.75, 1, 9.125],
 			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
+				"north": {"uv": [0, 0, 8, 5.25], "texture": "#control"},
 				"east": {"uv": [0, 0, 8, 0.5], "texture": "#control"},
 				"south": {"uv": [0, 0, 8, 5.25], "texture": "#control"},
 				"west": {"uv": [0, 4.75, 8, 4.875], "texture": "#control"},

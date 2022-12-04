@@ -3,8 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"controls": "trekfiles:block/lcars_controls_general_small",
-		"particle": "#bottom",
-		"bottom": "#bottom"
+		"particle": "#bottom"
 	},
 	"elements": [
 		{
@@ -19,23 +18,14 @@
 			}
 		},
 		{
-			"from": [14.5, 14, 5],
+			"from": [14.5, 14, 2.875],
 			"to": [15.75, 16, 5.125],
 			"faces": {
-				"east": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
-				"south": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
-				"west": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
-				"down": {"uv": [0, 0, 8, 0.25], "rotation": 180, "texture": "#controls"}
-			}
-		},
-		{
-			"from": [14.5, 14, 2.875],
-			"to": [15.75, 16, 3],
-			"faces": {
 				"north": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
-				"east": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
-				"west": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
-				"down": {"uv": [0, 0, 8, 0.25], "rotation": 180, "texture": "#controls"}
+				"east": {"uv": [0, 5.25, 8, 5.5], "texture": "#controls"},
+				"south": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
+				"west": {"uv": [0, 5.25, 8, 5.5], "texture": "#controls"},
+				"down": {"uv": [0, 5.25, 8, 5.5], "rotation": 180, "texture": "#controls"}
 			}
 		},
 		{

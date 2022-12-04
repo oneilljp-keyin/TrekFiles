@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import tech.johnoneill.trekfiles.TrekFiles;
 
 import java.util.EnumMap;
@@ -22,7 +23,7 @@ public class LCARSDisplay extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     protected static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
 
-    private static final Optional<VoxelShape> SHAPE = Optional.of(Block.box(0, 0, 15.75, 16, 16, 16));
+    private static final Optional<VoxelShape> SHAPE = Optional.of(Block.box(0.25, 0.25, 15.75, 15.75, 15.75, 16));
 
     public LCARSDisplay(Properties properties) {
         super(properties);
@@ -31,7 +32,7 @@ public class LCARSDisplay extends HorizontalDirectionalBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext ctx) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext ctx) {
         return SHAPES.get(state.getValue(FACING));
     }
 
@@ -54,7 +55,7 @@ public class LCARSDisplay extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING);
     }

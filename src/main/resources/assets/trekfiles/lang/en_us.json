@@ -33,6 +33,7 @@
 	"block.trekfiles.lcars_block_medical": "LCARS Block (Medical)",
 
 	"block.trekfiles.lcars_panel_nine": "LCARS Panel",
+	"block.trekfiles.lcars_panel_bridge_one": "LCARS Panel - Bridge",
 	"block.trekfiles.lcars_bridge_front_left": "Forward Brigde LCARS (Left Side)",
 	"block.trekfiles.lcars_bridge_front_right": "Forward Brigde LCARS (Right Side)",
 
@@ -40,6 +41,7 @@
 	"block.trekfiles.wall_panel_full_lower": "Wall Panel Full Lower (Defiant)",
 	"block.trekfiles.wall_panel_upper": "Wall Panel Upper (Defiant)",
 	"block.trekfiles.wall_panel_lower": "Wall Panel Lower (Defiant)",
+	"block.trekfiles.wall_panel_vertical_slab_upper_compartments": "Wall Panel Vertical Slab Upper with Compartments (Defiant)",
 	"block.trekfiles.wall_panel_vertical_slab_upper": "Wall Panel Vertical Slab Upper (Defiant)",
 	"block.trekfiles.wall_panel_vertical_slab_lower": "Wall Panel Vertical Slab Lower (Defiant)",
 	"block.trekfiles.wall_panel_vertical_post_upper": "Wall Panel Post Upper (Defiant)",
@@ -47,6 +49,13 @@
 	"block.trekfiles.wall_panel_corner_upper": "Wall Panel Corner Upper (Defiant)",
 	"block.trekfiles.wall_panel_corner_lower": "Wall Panel Corner Lower (Defiant)",
 	"block.trekfiles.wall_panel_full": "Wall Panel",
+	"block.trekfiles.wall_panel_slab": "Wall Slab",
+	"block.trekfiles.wall_panel_diagonal_post": "Wall Diagonal Post Lower",
+	"block.trekfiles.wall_panel_diagonal_post_upper": "Wall Diagonal Post Upper",
+	"block.trekfiles.wall_panel_diagonal": "Wall Diagonal Panel Lower",
+	"block.trekfiles.wall_panel_diagonal_upper": "Wall Diagonal Panel Upper",
+	"block.trekfiles.wall_diagonal": "Wall Diagonal Lower",
+	"block.trekfiles.wall_diagonal_upper": "Wall Diagonal Upper",
 
 	"block.trekfiles.door_defiant_single": "Door (Defiant)",
 	"block.trekfiles.door_defiant_single_diagonal": "Door (Defiant - Diagonal)",
@@ -102,6 +111,7 @@
 
 	"block.trekfiles.replicator_one": "Replicator",
 	"block.trekfiles.replicator_defiant": "Replicator (Defiant)",
+	"block.trekfiles.replicator_defiant_on_outside": "Replicator On Outside",
 	"block.trekfiles.replicator_defiant_bridge_corner": "Replicator (Defiant Bridge)",
 	"block.trekfiles.replicator_three": "Replicator",
 	"block.trekfiles.replicator_tray_holder": "Replicator Tray Holder",
@@ -188,6 +198,15 @@
 	"block.trekfiles.folded_seat": "Folding Seat",
 	"block.trekfiles.foot_stool": "Foot Stool",
 	"block.trekfiles.container_phaser_storage": "Container for Phasers",
+	"block.trekfiles.bridge_island": "Bridge Island (Defiant)",
+
+	"block.trekfiles.stairs_defiant_panel": "Stair Block ( Defiant Panels)",
+	"block.trekfiles.stairs_defiant_panel_blank": "Stair Block (Defiant Blank Panels)",
+	"block.trekfiles.stairs_defiant_panel_upper_strip": "Stair Block (Defiant Upper Panel w/ strip)",
+	"block.trekfiles.stairs_defiant_panel_lower_strip": "Stair Block (Defiant Lower Panel w/ strip)",
+
+	"block.trekfiles.overhead_light": "Overhead Light Bar",
+	"block.trekfiles.overhead_light_inside": "Overhead Light Bar (for inside half wall)",
 
 	"sounds.trekfiles.default_door_open": "Default Door Open",
 	"sounds.trekfiles.default_door_close": "Default Door Close"

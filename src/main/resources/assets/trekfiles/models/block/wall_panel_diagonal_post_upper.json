@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "trekfiles:block/vertical_slab",
+	"ambientocclusion": false,
+	"textures": {
+		"1": "trekfiles:block/panel_top",
+		"particle": "trekfiles:block/panel_top",
+		"lower": "trekfiles:block/wall_panel_upper"
+	},
+	"elements": [
+		{
+			"from": [2.333, 16, 2.333],
+			"to": [13.666, 24, 13.666],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [1, 2, 12.313, 13], "texture": "#lower"},
+				"east": {"uv": [1, 2, 12.313, 13], "texture": "#lower"},
+				"south": {"uv": [1, 2, 12.313, 13], "texture": "#lower"},
+				"west": {"uv": [1, 2, 12.313, 13], "texture": "#lower"},
+				"up": {"uv": [2.333, 2.333, 13.666, 13.666], "rotation": 90, "texture": "#1", "cullface": "down"}
+			}
+		},
+		{
+			"from": [2.333, 0, 2.333],
+			"to": [13.666, 16, 13.666],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#lower"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#lower"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#lower"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#lower"},
+				"down": {"uv": [2.333, 2.333, 13.666, 13.666], "rotation": 90, "texture": "#1", "cullface": "down"}
+			}
+		}
+	]
+}

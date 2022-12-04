@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
+		"controls": "trekfiles:block/lcars_controls_general_small",
 		"particle": "#bottom"
 	},
 	"elements": [
@@ -24,6 +25,26 @@
 				"south": {"uv": [2, 14, 16, 16], "texture": "#bottom"},
 				"up": {"uv": [4, 16, 14, 14], "texture": "#bottom"},
 				"down": {"uv": [2, 0, 16, 2], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [0.25, 14, 2.875],
+			"to": [1.5, 16, 3],
+			"faces": {
+				"north": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
+				"east": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
+				"west": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
+				"down": {"uv": [0, 0, 8, 0.25], "texture": "#controls"}
+			}
+		},
+		{
+			"from": [0.25, 14, 5],
+			"to": [1.5, 16, 5.125],
+			"faces": {
+				"east": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
+				"south": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
+				"west": {"uv": [0, 0, 8, 0.25], "texture": "#controls"},
+				"down": {"uv": [0, 0, 8, 0.25], "texture": "#controls"}
 			}
 		}
 	]

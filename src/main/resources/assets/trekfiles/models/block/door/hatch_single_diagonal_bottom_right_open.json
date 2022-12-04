@@ -2,10 +2,8 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"control": "trekfiles:block/lcars_controls_general_small",
-		"particle": "#bottom",
-		"bottom": "#bottom",
-		"lower": "#lower"
+		"controls": "trekfiles:block/lcars_controls_general_small",
+		"particle": "#bottom"
 	},
 	"elements": [
 		{
@@ -63,25 +61,14 @@
 		},
 		{
 			"from": [4.25, 14, -3],
-			"to": [4.375, 16, -1.75],
+			"to": [6.5, 16, -1.75],
 			"rotation": {"angle": -45, "axis": "y", "origin": [2.9375, 15, 9.625]},
 			"faces": {
-				"north": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
-				"south": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
-				"west": {"uv": [0, 5.25, 8, 16], "texture": "#control"},
-				"down": {"uv": [0, 0, 8, 0.25], "rotation": 90, "texture": "#control"}
-			}
-		},
-		{
-			"from": [6.375, 14, -3],
-			"to": [6.625, 16, -1.75],
-			"rotation": {"angle": -45, "axis": "y", "origin": [2.9375, 15, 9.625]},
-			"faces": {
-				"north": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
-				"east": {"uv": [0, 5.25, 8, 16], "texture": "#control"},
-				"south": {"uv": [0, 0, 8, 0.25], "texture": "#control"},
-				"west": {"uv": [0, 5.25, 8, 16], "texture": "#control"},
-				"down": {"uv": [0, 0, 8, 0.25], "rotation": 90, "texture": "#control"}
+				"north": {"uv": [0, 5.25, 8, 5.5], "texture": "#controls"},
+				"east": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
+				"south": {"uv": [0, 5.25, 8, 5.5], "texture": "#controls"},
+				"west": {"uv": [0, 5.25, 8, 16], "texture": "#controls"},
+				"down": {"uv": [0, 5.25, 8, 5.5], "rotation": 90, "texture": "#controls"}
 			}
 		},
 		{

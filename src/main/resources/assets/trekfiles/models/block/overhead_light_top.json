@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"casing": "trekfiles:block/hatch_door",
+		"particle": "trekfiles:block/white",
+		"light": "trekfiles:block/white"
+	},
+	"elements": [
+		{
+			"from": [3, 11, 14],
+			"to": [5, 13, 16],
+			"faces": {
+				"north": {"uv": [1.75, 1.75, 3.75, 3.75], "texture": "#casing"},
+				"south": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 90, "texture": "#casing"},
+				"west": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 90, "texture": "#casing"},
+				"up": {"uv": [1.75, 1.75, 3.75, 3.75], "texture": "#casing"},
+				"down": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 180, "texture": "#casing"}
+			}
+		},
+		{
+			"from": [5, 11, 14],
+			"to": [11, 13, 16],
+			"faces": {
+				"north": {"uv": [0.25, 7, 15.75, 9], "texture": "#light"},
+				"south": {"uv": [0.25, 7, 15.75, 9], "texture": "#light"},
+				"up": {"uv": [0.25, 7, 15.75, 9], "texture": "#light"},
+				"down": {"uv": [0.25, 7, 15.75, 9], "texture": "#light"}
+			}
+		},
+		{
+			"from": [11, 11, 14],
+			"to": [13, 13, 16],
+			"faces": {
+				"north": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 90, "texture": "#casing"},
+				"east": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 90, "texture": "#casing"},
+				"south": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 90, "texture": "#casing"},
+				"up": {"uv": [1.75, 1.75, 3.75, 3.75], "texture": "#casing"},
+				"down": {"uv": [1.75, 1.75, 3.75, 3.75], "rotation": 180, "texture": "#casing"}
+			}
+		}
+	]
+}

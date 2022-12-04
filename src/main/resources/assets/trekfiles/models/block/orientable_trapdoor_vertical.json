@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "trekfiles:block/tng_block",
+	"parent": "trekfiles:block/vertical_slab",
 	"textures": {
 		"particle": "trekfiles:block/hatch_door",
 		"texture": "trekfiles:block/hatch_door"

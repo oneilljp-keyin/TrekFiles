@@ -1,23 +1,46 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "trekfiles:block/vertical_slab",
+	"textures": {
+		"particle": "#wall"
+	},
 	"elements": [
+		{
+			"from": [0, 16, 5.5],
+			"to": [16, 24.5, 6],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 16, 5.5]},
+			"faces": {
+				"north": {"uv": [16, 6.25, 0, 14.25], "texture": "#wall"},
+				"east": {"uv": [14.75, 1, 15.25, 9], "texture": "#wall"},
+				"south": {"uv": [0.25, 0.25, 15.75, 13], "texture": "#wall"},
+				"west": {"uv": [15.25, 1, 15.75, 9], "texture": "#wall"},
+				"up": {"uv": [0, 0, 16, 0.5], "texture": "#end"}
+			}
+		},
+		{
+			"from": [0, 16, 5.5],
+			"to": [16, 24, 16],
+			"faces": {
+				"north": {"uv": [0.25, 0.25, 15.75, 13], "texture": "#wall"},
+				"east": {"uv": [8, 0.25, 15.75, 13], "texture": "#wall"},
+				"south": {"uv": [0.25, 0.25, 15.75, 13], "texture": "#wall"},
+				"west": {"uv": [8, 0.25, 15.75, 13], "texture": "#wall"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#end"}
+			}
+		},
 		{
 			"from": [0, 0, 8],
 			"to": [16, 16, 16],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 7, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#main"},
 				"east": {"uv": [8, 0, 15.75, 16], "texture": "#wall"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#wall"},
-				"west": {"uv": [8, 0, 15.75, 16], "texture": "#wall"},
-				"up": {"uv": [0, 0, 16, 8], "texture": "#end"}
+				"west": {"uv": [8, 0, 15.75, 16], "texture": "#wall"}
 			}
 		},
 		{
 			"from": [0, 6, 7.5],
 			"to": [16, 7, 8],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 1.25], "texture": "#side"},
 				"east": {"uv": [0, 0, 0.5, 1], "texture": "#side"},
@@ -29,7 +52,6 @@
 		{
 			"from": [0, 12.5, 5.5],
 			"to": [16, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [0, 1.75, 16, 5.25], "rotation": 180, "texture": "#side"},
 				"east": {"uv": [2.5, 1.75, 3, 5.25], "texture": "#side"},
@@ -47,14 +69,6 @@
 				"east": {"uv": [0.25, 3, 0.75, 4], "texture": "#side"},
 				"west": {"uv": [0.75, 3, 1.25, 4], "texture": "#side"}
 			}
-		}
-	],
-	"groups": [
-		{
-			"name": "VoxelShapes",
-			"origin": [8, 7, 8],
-			"color": 0,
-			"children": [0, 1, 2, 3]
 		}
 	]
 }
